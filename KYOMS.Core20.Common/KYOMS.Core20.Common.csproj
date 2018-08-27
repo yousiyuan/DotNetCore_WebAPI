@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helper\**" />
+    <Compile Remove="Log4NetCore\_bak\**" />
+    <EmbeddedResource Remove="Helper\**" />
+    <EmbeddedResource Remove="Log4NetCore\_bak\**" />
+    <None Remove="Helper\**" />
+    <None Remove="Log4NetCore\_bak\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.0.1" />
+    <PackageReference Include="MySqlConnector" Version="0.39.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="ODP.NetCore" Version="2.0.12" />
+    <PackageReference Include="SmartSql" Version="2.3.2" />
+    <PackageReference Include="SmartSql.ZooKeeperConfig" Version="1.2.8" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Jil" Version="3.3.0" />
+  </ItemGroup>
+</Project>

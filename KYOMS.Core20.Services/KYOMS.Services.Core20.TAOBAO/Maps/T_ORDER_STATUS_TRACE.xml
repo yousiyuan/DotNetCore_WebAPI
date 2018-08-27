@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_ORDER_STATUS_TRACE"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="FindByOrderNo">
+      select * from(select * from T_ORDER_STATUS_TRACE t where t.order_no=:order_no order by id desc) where ROWNUM=1
+    </Statement>
+    
+  </Statements>
+</SmartSqlMap>

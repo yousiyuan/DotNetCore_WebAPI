@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_ORDER"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="GetOrderByOrderNo">
+      SELECT * FROM T_ORDER WHERE ORDER_NO =:ORDER_NO AND ROWNUM=1
+    </Statement>
+
+    <Statement Id="GetOrderByOutSysCode">
+      SELECT * FROM T_ORDER WHERE OUTSYS_CODE =:OUTSYS_CODE AND ROWNUM=1
+    </Statement>
+
+    <Statement Id="T_ORDER_EXT_HCFindByOrderNo">
+      SELECT * FROM T_ORDER_EXT_HC where ORDER_NO =:ORDER_NO AND ROWNUM=1
+    </Statement>
+
+    <Statement Id="FindMailNoByOrderNo">
+      SELECT * FROM T_ORDER_WAYBILL_MAP where ORDER_NO =:ORDER_NO AND ROWNUM=1
+    </Statement>
+
+    <Statement Id="GetOrder">
+      SELECT * FROM T_ORDER where (ORDER_NO =:ORDER_NO OR OUTSYS_CODE =:ORDER_NO) ORDER BY CREATE_TIME DESC
+    </Statement>
+    <Statement Id="Cancel">
+      UPDATE T_ORDER SET
+      "ORDER_STATUS" = 30
+      ,"ORDER_CANCEL_TIME" = SYSDATE
+      ,"ORDER_CANCEL_REMARK" =:ORDER_CANCEL_REMARK
+      ,"NEED_ADD_RECORD_BOS" = 1
+      ,need_push_srm=1
+      ,need_push_wbms=0
+      ,last_push_srm_time=null
+      WHERE "OUTSYS_CODE" =:OUTSYS_CODE
+    </Statement>
+    <Statement Id="UpdateMailNo">
+      UPDATE T_ORDER SET
+      NEED_ADD_RECORD_BOS= 0
+      ,NEED_UPDATE_RECORD_BOS=1
+      ,UPDATE_TIME=SYSDATE
+      ,need_push_srm=1
+      ,need_push_wbms=0
+      ,last_push_srm_time=null
+      ,BILL_NO=:BILL_NO
+      ,REMARK2=:REMARK2
+      WHERE OUTSYS_CODE =:OUTSYS_CODE
+    </Statement>
+  </Statements>
+</SmartSqlMap>

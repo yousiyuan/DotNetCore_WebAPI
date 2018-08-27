@@ -1,0 +1,7 @@
+﻿[Header]
+17:08:31 DEBUG  1 
+Method Name: MoveNext
+Record Msg: 第1次数据提交总计用时：4460
+17:08:31 INFO   1 
+Method Name: MoveNext
+Record Msg: 第1订单提交成功,运单号：6201712220001，外部订单号：LBXDCP1023892817

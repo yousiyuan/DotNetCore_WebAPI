@@ -1,0 +1,47 @@
+﻿[Header]
+2018-04-13 16:18:50,641 INFO  Default [1]  
+使用节点172.16.37.30连接zookeeper成功
+
+[Header]
+2018-04-13 16:18:50,722 INFO  Default [1]  
+检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+[Header]
+2018-04-13 16:18:50,727 INFO  Default [1]  
+当前Zookeeper路径:/NetCore.OMS/config/DEV1.0/MySql/MySqlConnectionString
+[Header]
+2018-04-13 16:18:50,734 INFO  Default [1]  
+Zookpeer返回结果:Server=172.16.36.62;Port=3306;Database=KYOMS;Uid=DEV;Pwd=DEV;convert zero datetime=True;Allow User Variables=True
+[Header]
+2018-04-13 16:18:50,737 INFO  Default [1]  
+Zookeeper查询完毕，查询用时：10毫秒
+[Header]
+2018-04-13 16:18:50,806 INFO  Default [1]  
+配置文件替换完毕，本次运行耗时：68毫秒
+
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Header]
+2018-04-13 16:19:25,719 INFO  Default [10]  
+请求类型：text/plain添加订单AddOrder原始请求报文：logistics_interface=%7B%22chargingInfo%22%3A%7B%22basicWeight%22%3A%7B%22fee%22%3A%225%22%2C%22weight%22%3A%223%22%7D%2C%22stepWeight%22%3A%7B%22fee%22%3A%222%22%2C%22weight%22%3A%221%22%7D%2C%22totalFee%22%3A%2223%22%7D%2C%22courierInfo%22%3A%7B%22company%22%3A%22%E5%A4%A9%E5%A4%A9%E5%BF%AB%E9%80%92%22%2C%22courierNo%22%3A%22199900%22%2C%22courierPhone%22%3A%221381111111%22%2C%22extendFields%22%3A%5B%7B%22key%22%3A%22PACKAGE_NO%22%2C%22value%22%3A%22DWD0018%22%7D%5D%2C%22name%22%3A%22%E5%BC%A0%E4%B8%89%22%2C%22station%22%3A%22%E4%BD%99%E6%9D%AD%E7%BD%91%E7%82%B9%22%2C%22stationPhone%22%3A%221381111111%22%7D%2C%22cpCode%22%3A%22SF%22%2C%22dicCode%22%3A%22DCP00098765%22%2C%22expressPrintCode%22%3A%22AeduSjkd%22%2C%22logisticsId%22%3A%22LBXDCP1023892594%22%2C%22mailNo%22%3A%226201710180538%22%2C%22opRequire%22%3A%7B%22opDesc%22%3A%22%E5%A4%A9%E7%8C%AB%E5%85%A8%E6%B8%A0%E9%81%93%E7%9A%84%E4%BD%9C%E4%B8%9A%E7%B1%BB%E5%9E%8B%22%2C%22opType%22%3A%22TMQQD%22%7D%2C%22orderBizType%22%3A%221%22%2C%22orderCreateTime%22%3A%222014-07-28+10%3A05%3A34%22%2C%22orderExtendFields%22%3A%5B%7B%22key%22%3A%22A001%22%2C%22value%22%3A%225000%22%7D%5D%2C%22orderSource%22%3A%22TB%22%2C%22packageInfo%22%3A%7B%22itemList%22%3A%5B%7B%22extendFields%22%3A%22is_precious%3A1%3BitemId%3A45571155013%3BserviceFlag%3A2%3B%22%2C%22insuredAmount%22%3A%22199900%22%2C%22itemName%22%3A%22%E6%AF%9B%E8%A1%A3%22%2C%22itemNum%22%3A%221%22%7D%5D%2C%22packageHeight%22%3A%2250%22%2C%22packageLength%22%3A%2250%22%2C%22packageVolume%22%3A%22500000%22%2C%22packageWeight%22%3A%22200000%22%2C%22packageWidth%22%3A%2250%22%7D%2C%22placeOrderType%22%3A%221%22%2C%22receiver%22%3A%7B%22address%22%3A%22%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%AB%98%E6%96%B0%E5%8C%BA%E6%96%B0%E8%88%AA%E8%B7%AF283%E5%8F%B7%22%2C%22city%22%3A%22%E6%88%90%E9%83%BD%22%2C%22county%22%3A%22%E9%AB%98%E6%96%B0%22%2C%22mobile%22%3A%2215956874256%22%2C%22name%22%3A%22%E6%9D%8E%E6%9F%90%22%2C%22phone%22%3A%22024-84332654%22%2C%22province%22%3A%22%E5%9B%9B%E5%B7%9D%22%2C%22receiverDivisionId%22%3A%2267991%22%2C%22receiverTown%22%3A%22%E6%96%87%E4%B8%80%E8%B7%AF%22%2C%22userId%22%3A%22123456%22%2C%22zipCode%22%3A%22634569%22%7D%2C%22remark%22%3A%22%22%2C%22routeInfo%22%3A%7B%22after%22%3A%7B%22address%22%3A%22%E6%9D%AD%E5%B7%9E%E5%B8%82%E6%96%87%E4%B8%80%E8%A5%BF%E8%B7%AF999%E5%8F%B7%22%2C%22city%22%3A%22%E6%9D%AD%E5%B7%9E%22%2C%22contactNumber%22%3A%2213812345678%22%2C%22contacts%22%3A%22%E5%BC%A0%E4%B8%89%22%2C%22county%22%3A%22%E9%AB%98%E5%85%B4%E5%8C%BA%22%2C%22cpCode%22%3A%22CP001%22%2C%22prov%22%3A%22%E6%B5%99%E6%B1%9F%22%2C%22town%22%3A%22%E6%96%87%E4%B8%80%E8%A5%BF%E8%B7%AF%22%7D%2C%22before%22%3A%7B%22address%22%3A%22669%E5%8F%B7%22%2C%22city%22%3A%22%E6%9D%AD%E5%B7%9E%22%2C%22contactNumber%22%3A%22138111111989%22%2C%22contacts%22%3A%22%E5%BC%A0%E4%B8%89%22%2C%22county%22%3A%22%E9%AB%98%E5%85%B4%E5%8C%BA%22%2C%22cpCode%22%3A%22T002%22%2C%22prov%22%3A%22%E6%B5%99%E6%B1%9F%22%2C%22town%22%3A%22%E6%96%87%E4%B8%80%E8%A5%BF%E8%B7%AF%22%7D%2C%22carrierCode%22%3A%22T123568%22%2C%22extendFields%22%3A%5B%7B%22key%22%3A%22SF_PRODUCT_CODE%22%2C%22value%22%3A%221%22%7D%5D%2C%22shortAddress%22%3A%22%E6%B5%99%EF%BC%8D%E6%9D%AD%22%2C%22siteCode%22%3A%22HX1%22%2C%22siteName%22%3A%22%E6%9D%AD%E8%90%A71%E7%AB%99%22%7D%2C%22sender%22%3A%7B%22Town%22%3A%22%E8%A1%97%E9%81%93%22%2C%22address%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E4%BD%99%E6%9D%AD%E5%8C%BA%E6%96%87%E4%B8%80%E8%A5%BF%E8%B7%AF823%E5%8F%B7%22%2C%22city%22%3A%22%E6%9D%AD%E5%B7%9E%22%2C%22county%22%3A%22%E4%BD%99%E6%9D%AD%22%2C%22customerId%22%3A%2212792%22%2C%22customerNo%22%3A%22JD007689%22%2C%22mobile%22%3A%2213989203824%22%2C%22name%22%3A%22%E5%88%98%E6%9F%90%22%2C%22phone%22%3A%220571-84292224%22%2C%22province%22%3A%22%E6%B5%99%E6%B1%9F%22%2C%22senderAddressId%22%3A%227638290%22%2C%22senderDivisionId%22%3A%2267991%22%2C%22senderTown%22%3A%22%E8%A1%97%E9%81%93%22%2C%22userId%22%3A%22123456%22%2C%22zipCode%22%3A%22638293%22%7D%2C%22serviceDetail%22%3A%7B%22codBuyServiceFee%22%3A%22300%22%2C%22codSplitFee%22%3A%22100%22%2C%22codTotalServiceFee%22%3A%22500%22%2C%22customerOrderTime%22%3A%222014-07-30+14%3A00%3A00%22%2C%22endSignTime%22%3A%222015-09-11+17%3A00%3A00%22%2C%22expressScheduleType%22%3A%22101%22%2C%22extendFields%22%3A%5B%7B%22key%22%3A%22A001%22%2C%22value%22%3A%225000%22%7D%5D%2C%22goodsValue%22%3A%2210000%22%2C%22gotEndTime%22%3A%22204-11-30+19%3A00%22%2C%22gotInTime%22%3A%2230%22%2C%22gotStartTime%22%3A%22204-11-30+18%3A00%22%2C%22grabOrderTime%22%3A%222014-07-30+14%3A00%3A00%22%2C%22prevMailNo%22%3A%22%22%2C%22promiseSignTime%22%3A%222015-09-11+16%3A30%3A00%22%2C%22scheduleDesc%22%3A%22%E9%80%81%E8%BE%BE%E6%97%B6%E9%97%B4%E5%9C%A82014-07-30+10%3A00%3A00%E5%88%B02014-07-30+14%3A00%3A00%E4%B9%8B%E9%97%B4%22%2C%22scheduleType%22%3A%22104%22%2C%22sendEndTime%22%3A%222014-07-30+13%3A05%3A34%22%2C%22sendStartTime%22%3A%222014-07-30+12%3A05%3A34%22%2C%22temperatureRequirement%22%3A%220-18%22%2C%22totalFee%22%3A%22600%22%2C%22totalInsuredAmount%22%3A%2223930%22%7D%2C%22serviceFlag%22%3A%2234%2C37%22%2C%22tradeNo%22%3A%2222227880099%22%7D&data_digest=CgtasrQSpiCO6Vjk6cHJug%3D%3D&msg_type=TMS_CREATE_ORDER_ONLINE_NOTIFY&msg_id=DCP00000000000002354032&ecCompanyId=TAOBAO 
+
+[Header]
+2018-04-13 16:19:25,885 INFO  Default [10]  
+运单号：6201710180538外部订单号LBXDCP1023892594提交订单原始数据：{"chargingInfo":{"basicWeight":{"fee":"5","weight":"3"},"stepWeight":{"fee":"2","weight":"1"},"totalFee":"23"},"courierInfo":{"company":"天天快递","courierNo":"199900","courierPhone":"1381111111","extendFields":[{"key":"PACKAGE_NO","value":"DWD0018"}],"name":"张三","station":"余杭网点","stationPhone":"1381111111"},"cpCode":"SF","dicCode":"DCP00098765","expressPrintCode":"AeduSjkd","logisticsId":"LBXDCP1023892594","mailNo":"6201710180538","opRequire":{"opDesc":"天猫全渠道的作业类型","opType":"TMQQD"},"orderBizType":"1","orderCreateTime":"2014-07-28T10:05:34","orderExtendFields":[{"key":"A001","value":"5000"}],"orderSource":"TB","packageInfo":{"itemList":[{"extendFields":"is_precious:1;itemId:45571155013;serviceFlag:2;","insuredAmount":"199900","itemName":"毛衣","itemNum":"1"}],"packageHeight":"50","packageLength":"50","packageVolume":"500000","packageWeight":"200000","packageWidth":"50"},"placeOrderType":"1","receiver":{"address":"四川省成都市高新区新航路283号","city":"成都","county":"高新","mobile":"15956874256","name":"李某","phone":"024-84332654","province":"四川","receiverDivisionId":"67991","receiverTown":"文一路","userId":"123456","zipCode":"634569"},"remark":"","routeInfo":{"after":{"address":"杭州市文一西路999号","city":"杭州","contactNumber":"13812345678","contacts":"张三","county":"高兴区","cpCode":"CP001","prov":"浙江","town":"文一西路"},"before":{"address":"669号","city":"杭州","contactNumber":"138111111989","contacts":"张三","county":"高兴区","cpCode":"T002","prov":"浙江","town":"文一西路"},"carrierCode":"T123568","extendFields":[{"key":"SF_PRODUCT_CODE","value":"1"}],"shortAddress":"浙－杭","siteCode":"HX1","siteName":"杭萧1站"},"sender":{"Town":"街道","address":"浙江省杭州市余杭区文一西路823号","city":"杭州","county":"余杭","customerId":"12792","customerNo":"JD007689","mobile":"13989203824","name":"刘某","phone":"0571-84292224","province":"浙江","senderAddressId":"7638290","senderDivisionId":"67991","senderTown":"街道","userId":"123456","zipCode":"638293"},"serviceDetail":{"codBuyServiceFee":"300","codSplitFee":"100","codTotalServiceFee":"500","customerOrderTime":"2014-07-30T14:00:00","endSignTime":"2015-09-11T17:00:00","expressScheduleType":"101","extendFields":[{"key":"A001","value":"5000"}],"goodsValue":"10000","gotEndTime":"204-11-30 19:00","gotInTime":"30","gotStartTime":"204-11-30 18:00","grabOrderTime":"2014-07-30T14:00:00","prevMailNo":"","promiseSignTime":"2015-09-11T16:30:00","scheduleDesc":"送达时间在2014-07-30 10:00:00到2014-07-30 14:00:00之间","scheduleType":"104","sendEndTime":"2014-07-30T13:05:34","sendStartTime":"2014-07-30T12:05:34","temperatureRequirement":"0-18","totalFee":"600","totalInsuredAmount":"23930"},"serviceFlag":"34,37","tradeNo":"22227880099"} 
+
+[Header]
+2018-04-13 16:19:25,888 INFO  Default [10]  
+数据校验与处理用时：167毫秒 
+
+[Header]
+2018-04-13 16:19:26,364 INFO  Default [3]  
+运单号是6201710180538外部订单号是LBXDCP1023892594的菜鸟仓配订单已成功落盘 
+
+[Header]
+2018-04-13 16:19:26,373 INFO  Default [3]  
+总计用时：652毫秒 
+

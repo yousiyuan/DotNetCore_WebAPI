@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TAOBAO</title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <style type="text/css">
+        #TextArea1 {
+            height: 257px;
+            width: 770px;
+        }
+
+        #taPostData {
+            height: 377px;
+            width: 929px;
+        }
+
+        #reason {
+            width: 540px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center;">
+        <p style="display:  block;text-align: left;margin-left: 15%;">
+            操作接口:
+            <select id="interface">
+                <option value="/api/order/add">/api/order/add</option>
+                <option value="/api/order/modify_cancel">/api/order/modify_cancel</option>
+                <option value="/api/order/modify_cancel">撤单.ashx</option>
+            </select>
+        </p>
+        <textarea id="taPostData" name="S1" style="margin: 0px; height: 279px; width: 70%;"></textarea><br />
+        <br />
+        <p>
+            <span style="display:  block;text-align: left;margin-left: 15%;">结果：</span>
+            <textarea id="result" name="S1" style="margin: 0px; width: 70%; height: 40px;"></textarea><br />
+        </p>
+        <br />
+        <button id="AddOrder" style="margin-left: 50px">提交</button>
+        <button id="CreateSecret" style="margin-left: 50px">生成密钥</button>
+        <button id="Reload" style="margin-left: 100px">刷新</button>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var url = "/api/order/add";
+    var origin = location.origin;
+    var postBody = [
+        'logistics_interface={"serviceType":"0","orderType":"1","tradeNo":"0","receiver":{"address":"郢城镇   人民路18号水榭香堤B区378-3-405","phone":"******","city":"荆州市,荆州区","name":"李**","mobile":"177****6888","postCode":"434020","prov":"湖北省"},"ecCompanyId":"Taobao","goodsValue":"0","logisticProviderID":"DISTRIBUTOR_247761","mailNo":"300038250635","special":"0","sender":{"address":"黄岐镇必冲大沙工业园南约西街33号1楼","phone":"85928669","city":"佛山市,南海区","name":"蒋丽霞","mobile":"13543697736","postCode":"528000","prov":"广东省"},"itemsValue":"0","customerId":"9f031e8572e1d09f82aff7abfa2d48b6","txLogisticID":"LP00093216169714","items":[{"number":"0","itemName":"无","itemValue":"0"}]}&data_digest=rWWCtqkIG5ZQBIw70iI20Q==&msg_type=ORDERCREATE&ecCompanyId=TAOBAO&msg_id=0be42f2715166805649474139e383f&version=2.1',
+        'logistics_interface={"logisticProviderID":"DISTRIBUTOR_247761","fieldList":[{"fieldName":"mailNo","txLogisticID":"LP00093216169714","fieldValue":"300038250636"}]}&data_digest=urV589JkSWSQiit7bxkqCA==&msg_type=UPDATE&to_code=TAOBAO&msg_id=0b83debd15165758627128727edfd1&version=2.1',
+        'logistics_interface={"logisticProviderID":"DISTRIBUTOR_247761","fieldList":[{"fieldName":"status","txLogisticID":"LP00093216169714","fieldValue":"WITHDRAW","remark":"订单撤销原因"}]}&data_digest=QE3dL7kWzsBoZPfm3sfLSQ==&msg_type=UPDATE&to_code=TAOBAO&msg_id=0b83debd15165758627128727edfd1&version=2.1'
+    ];
+    $(document).ready(function () {
+        $('#interface').val(url);
+        $('#taPostData').val(postBody[0]);
+        var self = this;
+        self.addBtn = $("#AddOrder");
+        self.CreateSecret = $("#CreateSecret");
+        self.reloadBtn = $("#Reload");
+        self.postwebJson = function (url, param, fn) {
+            $.ajax({
+                url: url,
+                type: "post",
+                data: param,
+                //dataType: "json",
+                //async: false,
+                success: fn
+            });
+        };
+        //添加事件
+        self.addBtn.click(function () {
+            self.message =$('#taPostData').val();
+            var param = self.message;
+            self.postwebJson(origin + $('#interface').val(), param, function (data) {
+                $("#result").val(JSON.stringify(data));
+                console.log(data.errorMsg);
+            });
+        });
+
+        //添加事件
+        self.CreateSecret.click(function () {
+            self.message = $('#taPostData').val();
+            var param = self.message;
+            self.postwebJson('/api/order/CreateSecretKey', param, function (data) {
+                $("#result").val(JSON.stringify(data));
+                console.log(data.errorMsg);
+            });
+        });
+        //重新加载事件
+        self.reloadBtn.click(function () {
+            location.reload();
+        });
+        $('#interface').change(function () {
+            //if ($('#taPostData').val() == '') {
+            $('#taPostData').val(postBody[$('option:selected', '#interface').index()]);
+            // }
+        });
+    });
+</script>

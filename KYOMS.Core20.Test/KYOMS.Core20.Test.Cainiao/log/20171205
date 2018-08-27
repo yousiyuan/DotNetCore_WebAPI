@@ -1,0 +1,33 @@
+﻿[Header]
+09:01:17 ERROR  2 
+Method Name: MoveNext
+Record Msg: 多线程请求新增订单接口时发生错误:
+参数：[LBXDCP1023892817, 6201712050001]订单内容：{"Key":"LBXDCP1023892817","Value":"6201712050001"}A task was canceled.
+[Header]
+09:25:39 DEBUG  2 
+Method Name: MoveNext
+Record Msg: 第1次数据提交总计用时：10200
+09:25:39 ERROR  2 
+Method Name: MoveNext
+Record Msg: 第1订单提交失败：订单写入数据库失败，运单号：6201712050001，外部订单号：LBXDCP1023892817
+[Header]
+09:58:29 DEBUG  2 
+Method Name: MoveNext
+Record Msg: 第1次数据提交总计用时：4946
+09:58:29 INFO   2 
+Method Name: MoveNext
+Record Msg: 第1订单提交成功,运单号：6201712050001，外部订单号：LBXDCP1023892817
+[Header]
+11:43:36 DEBUG  2 
+Method Name: MoveNext
+Record Msg: 第1次数据提交总计用时：3419
+11:43:36 ERROR  2 
+Method Name: MoveNext
+Record Msg: 第1订单提交失败：订单写入数据库失败，运单号：6201712050001，外部订单号：LBXDCP1023892817
+[Header]
+11:48:21 DEBUG  2 
+Method Name: MoveNext
+Record Msg: 第1次数据提交总计用时：5622
+11:48:21 INFO   2 
+Method Name: MoveNext
+Record Msg: 第1订单提交成功,运单号：6201712050001，外部订单号：LBXDCP1023892817

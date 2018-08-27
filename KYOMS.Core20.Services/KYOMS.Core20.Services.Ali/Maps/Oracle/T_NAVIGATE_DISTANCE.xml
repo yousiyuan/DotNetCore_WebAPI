@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_NAVIGATE_DISTANCE"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <!--获取数据列-->
+    <Statement Id="T_NAVIGATE_DISTANCE.Insert">
+    INSERT INTO  T_NAVIGATE_DISTANCE
+    ("ID"
+    ,"ORDER_NO"
+    ,"MAIL_NO"
+    ,"PICKUP_DISTANCE"
+    ,"SEND_DISTANCE"
+    ,"REMARK"
+    ,"CREATE_BY"
+    ,"CREATE_TIME"
+    ,"UPDATE_BY"
+    ,"UPDATE_TIME"
+    )
+    VALUES
+    (S_T_NAVIGATE_DISTANCE.NEXTVAL
+    ,#ORDER_NO#
+    ,#MAIL_NO#
+    ,#PICKUP_DISTANCE#
+    ,#SEND_DISTANCE#
+    ,#REMARK#
+    ,#CREATE_BY#
+    ,SYSDATE
+    ,#UPDATE_BY#
+    ,SYSDATE
+    )
+    </Statement>
+  </Statements>
+</SmartSqlMap>

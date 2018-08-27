@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_ORDER_DELIVERY_TRACK"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <!--获取数据列-->
+    <Statement Id="T_ORDER_DELIVERY_TRACK.FindByOrderNo">
+    SELECT *
+      FROM "DEV"."T_ORDER_DELIVERY_TRACK"
+     WHERE ("ORDER_ID" = :Value OR "MAILNO" = :Value)
+     ORDER BY "OP_TIME"
+    </Statement>
+  </Statements>
+</SmartSqlMap>

@@ -1,0 +1,15 @@
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>cd E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Core20.Services.Ali
+
+C:\Users\Administrator>e:
+
+E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Core20.Services.Ali>dotnet publish -r centos.7-x64 -c release
+
+
+
+
+在Windows环境下发布
+dotnet publish -c Release --self-contained -r win-x64
+

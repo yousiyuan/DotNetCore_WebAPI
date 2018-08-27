@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_ORDER_STATUS_TRACE"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="FindByOrderNo">
+      select * from(select * from T_ORDER_STATUS_TRACE t where t.order_no=:order_no order by id desc) where ROWNUM=1
+    </Statement>
+
+    <Statement Id="Insert">
+      INSERT INTO T_ORDER_STATUS_TRACE
+      (
+      "ID"
+      ,"ORDER_NO"
+      ,"CHANGED_STATUS"
+      ,"REMARK"
+      ,"OP_TIME"
+      ,"OP_TYPE"
+      ,"OP_SITE_CODE"
+      ,"CREATE_BY"
+      ,"CREATE_TIME"
+      ,"UPDATE_BY"
+      ,"UPDATE_TIME"
+      )
+      VALUES
+      (
+      S_ORDER_STATUS_TRACE.NEXTVAL
+      ,#ORDER_NO#
+      ,#CHANGED_STATUS#
+      ,#REMARK#
+      ,#OP_TIME#
+      ,#OP_TYPE#
+      ,#OP_SITE_CODE#
+      ,#CREATE_BY#
+      ,#CREATE_TIME#
+      ,#UPDATE_BY#
+      ,#UPDATE_TIME#
+      )
+    </Statement>
+
+  </Statements>
+</SmartSqlMap>

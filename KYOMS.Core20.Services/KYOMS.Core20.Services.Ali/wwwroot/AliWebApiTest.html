@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>阿里订单接口测试-WebAPI</title>
+    <script src="jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div>
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tr><td>请求方式：</td><td><input type="button" id="btnAddOrder4" onclick="addOrder4(this)" value="测试提交订单" /></td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>请求方式：</td><td><input type="button" id="btnAddOrderEdit" onclick="UpdateOrder(this)" value="测试编辑订单" /></td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>请求方式：</td><td><input type="button" id="btnAddOrderCancel" onclick="CancelOrder(this)" value="测试取消订单" /></td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>请求方式：</td><td><input type="button" id="btnAddOrderQuery" onclick="QueryOrder(this)" value="测试查询订单" /></td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>结果</td><td><input type="text" name="result" value="" /></td></tr>
+            <tr><td>订单号</td><td><input type="text" name="ordercode" value="" /></td></tr>
+            <tr><td>错误信息</td><td><input type="text" name="errmsg" value="" /></td></tr>
+        </table>
+    </div>
+    <script language="javascript" type="text/javascript">
+        var self = this;
+        self.root = location.protocol + "//" + location.host + "/";
+
+        self.orderdata = {
+            "totalVolume": "0.00",
+            "totalNumber": "1",
+            "backSignBill": "0",
+            "bizType": "ZX",
+            "receiver": {
+                "address": "体育西路337号（一阳五金店）",
+                "province": "湖北省",
+                "phone": "",
+                "city": "孝感市",
+                "companyName": "b2b-60901590",
+                "name": "范进文",
+                "mobile": "15072571132",
+                "county": "孝南区",
+                "postCode": "432100"
+            },
+            "vistReceive": "N",
+            "deliveryType": "0",
+            "materialCost": "N",
+            "logisticCompanyID": "2460304407_385",
+            "mailNo": "300041157989",
+            "payType": "4",
+            "cargoName": "E27小直口螺口吊灯头401 等多件",
+            "sender": {
+                "address": "棉湖镇富领工业区",
+                "province": "广东省",
+                "phone": "",
+                "city": "揭阳市",
+                "companyName": "广东揭阳奥发电器厂",
+                "name": "王永群",
+                "mobile": "13802323624",
+                "county": "揭西县",
+                "postCode": "000000"
+            },
+            "smsNotify": "N",
+            "totalWeight": "0.00",
+            "gmtCommit": "1520352090000",
+            "logisticID": "LP00094865332192",
+            "aliUID": "964898912",
+            "memberType": "PT",
+            "waitNotifySend": "N",
+            "fuelSurcharge": "N"
+        };
+        function addOrder4(btn) {
+            self.url = self.root + "api/aliorders/addorder";
+
+            self.encodeHtml = JSON.stringify(self.orderdata);//不需要 进行  UrlEncode编码
+            self.data_digest = '2bF31pAWsKQFTpxVhbG5iQ==';   //不需要 进行  UrlEncode编码
+
+            //JS对象形式传参
+            self.message = {
+                "logistics_interface": self.encodeHtml,
+                "data_digest": self.data_digest,
+                "partner_code": self.orderdata.logisticCompanyID,
+                "from_code": "logisticsmarket-center",
+                "msg_type": "HY_CREATE_ORDER_NOTIFY",
+                "msg_id": self.orderdata.logisticID
+            };
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                contentType: "application/json",
+                url: self.url,
+                data: self.message,
+                dataType: "text",
+                beforeSend: function (xhr) {
+                    //在发送请求之前，执行这里的代码
+                },
+                success: function (result, status, xhr) {
+                    alert(result);
+                },
+                complete: function (xhr, status) {
+                    //请求完成时运行的函数
+                    //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                },
+                error: function (xhr, status, error) {
+                    //如果请求失败要运行的函数。
+                    if (typeof (xhr.responseText) != "undefined")
+                        alert(xhr.status + ":" + xhr.statusText);
+                    else
+                        alert(error.message);
+                }
+            });
+
+            $(btn).attr({ "disabled": "disabled" });
+        }
+
+        self.ordereditdata = {
+            "totalVolume":"10",
+            "serviceType":"001",
+            "totalNumber":"20",
+            "packageServicePrice":"5.00",
+            "totalPrice":"100",
+            "smsNotifyPrice":"5.00",
+            "materialCost":"Y",
+            "remark":"无",
+            "toNetworkNo":"S2",
+            "codType":"1",
+            "businessNetworkNo":"S1",
+            "payType":"2",
+            "backSignBillPrice":"2.00",
+            "otherPrice":"1.00",
+            "codPrice":"2.00",
+            "extendFields":"test,ddte;",
+            "weightRate":"12",
+            "transportType":"SDFG",
+            "waitNotifySend":"N",
+            "backSignBill":"Y",
+            "fuelSurchargePrice":"2.00",
+            "receiver":{
+                "address":"浙江省杭州市余杭区文一西路969号淘宝城",
+                "province":"浙江省",
+                "phone":"0571-85022088-30000",
+                "city":"杭州市",
+                "companyName":"菜鸟网络科技",
+                "name":"张三",
+                "mobile":"18668015381",
+                "county":"余杭区",
+                "postCode":"510200"
+            },
+            "vistReceive":"SSDD",
+            "leastExpenses":"10.00",
+            "deliveryType":"1",
+            "packageService":"5.00",
+            "waitNotifySendPrice":"1.00",
+            "logisticCompanyID":"964898912",
+            "deliveryPrice":"5.00",
+            "volumeRate":"11",
+            "vistReceivePrice":"2.00",
+            "codValue":"100.00",
+            "materialCostPrice":"2.00",
+            "insuranceValue":"5.00",
+            "transportPrice":"1.00",
+            "cargoName":"水果",
+            "extendParam":"12358622",
+            "sender":{
+                "address":"浙江省杭州市西湖区蒋村",
+                "province":"浙江省",
+                "phone":"0571-85022088-30000",
+                "city":"杭州市",
+                "companyName":"阿里巴巴（中国）软件有限公司",
+                "name":"张三",
+                "mobile":"13105713432",
+                "county":"西湖区",
+                "postCode":"510020"
+            },
+            "insurancePrice":"6.00",
+            "smsNotify":"Y",
+            "totalWeight":"3",
+            "gmtUpdated":"1300974726000",
+            "logisticID": "LP00094865332192",
+            "mailNo": "300041157989",
+            "memberType":"POW",
+            "fuelSurcharge":"N",
+            "promotion":"大促"
+        };
+        function UpdateOrder(btn) {
+            self.url = self.root + "api/aliorders/editorder";
+
+            self.encodeHtml = JSON.stringify(self.ordereditdata);//不需要 进行  UrlEncode编码
+            self.data_digest = 'WboqiWxcucQSlVRVH9qI2w==';   //不需要 进行  UrlEncode编码
+
+            //JS对象形式传参
+            self.message = {
+                "logistics_interface": self.encodeHtml,
+                "data_digest": self.data_digest,
+                "partner_code": self.orderdata.logisticCompanyID,
+                "from_code": "logisticsmarket-center",
+                "msg_type": "HY_UPDATE_ORDER_NOTIFY",
+                "msg_id": self.orderdata.logisticID
+            };
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                contentType: "application/json",
+                url: self.url,
+                data: self.message,
+                dataType: "text",
+                beforeSend: function (xhr) {
+                    //在发送请求之前，执行这里的代码
+                },
+                success: function (result, status, xhr) {
+                    alert(result);
+                },
+                complete: function (xhr, status) {
+                    //请求完成时运行的函数
+                    //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                },
+                error: function (xhr, status, error) {
+                    //如果请求失败要运行的函数。
+                    if (typeof (xhr.responseText) != "undefined")
+                        alert(xhr.status + ":" + xhr.statusText);
+                    else
+                        alert(error.message);
+                }
+            });
+
+            $(btn).attr({ "disabled": "disabled" });
+        }
+
+        self.ordercanceldata = {
+            "serviceType":"001",
+            "gmtCancel":"1300974726000",
+            "extendParam":"扩展字段",
+            "extendFields":"test,ddte;",
+            "remark":"订单信息填写错误",
+            "logisticCompanyID":"2460304407_385",
+            "logisticID":"LP00094865332192"
+        };
+        function CancelOrder(btn) {
+            self.url = self.root + "api/aliorders/cancelorder";
+
+            self.encodeHtml = JSON.stringify(self.ordercanceldata);//不需要 进行  UrlEncode编码
+            self.data_digest = 'fsXOYFQrMuyy4JRGo6DsyA==';   //不需要 进行  UrlEncode编码
+
+            //JS对象形式传参
+            self.message = {
+                "logistics_interface": self.encodeHtml,
+                "data_digest": self.data_digest,
+                "partner_code": self.orderdata.logisticCompanyID,
+                "from_code": "logisticsmarket-center",
+                "msg_type": "HY_CANCEL_ORDER_NOTIFY",
+                "msg_id": self.orderdata.logisticID
+            };
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                contentType: "application/json",
+                url: self.url,
+                data: self.message,
+                dataType: "text",
+                beforeSend: function (xhr) {
+                    //在发送请求之前，执行这里的代码
+                },
+                success: function (result, status, xhr) {
+                    alert(result);
+                },
+                complete: function (xhr, status) {
+                    //请求完成时运行的函数
+                    //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                },
+                error: function (xhr, status, error) {
+                    //如果请求失败要运行的函数。
+                    if (typeof (xhr.responseText) != "undefined")
+                        alert(xhr.status + ":" + xhr.statusText);
+                    else
+                        alert(error.message);
+                }
+            });
+
+            $(btn).attr({ "disabled": "disabled" });
+        }
+
+        self.queryorderdata = {
+            "logisticCompanyID": "964898912",
+            "logisticID": "LP00094865332192"
+        };
+        function QueryOrder(btn) {
+            self.url = self.root + "api/aliorders/queryorder";
+
+            self.encodeHtml = JSON.stringify(self.queryorderdata);//不需要 进行  UrlEncode编码
+            self.data_digest = 'wwE1YcUQp0hgI6JAdBkN9g==';   //不需要 进行  UrlEncode编码
+
+            //JS对象形式传参
+            self.message = {
+                "logistics_interface": self.encodeHtml,
+                "data_digest": self.data_digest,
+                "partner_code": self.orderdata.logisticCompanyID,
+                "from_code": "logisticsmarket-center",
+                "msg_type": "HY_QUERY_ORDER",
+                "msg_id": self.orderdata.logisticID
+            };
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                contentType: "application/json",
+                url: self.url,
+                data: self.message,
+                dataType: "text",
+                beforeSend: function (xhr) {
+                    //在发送请求之前，执行这里的代码
+                },
+                success: function (result, status, xhr) {
+                    alert(result);
+                },
+                complete: function (xhr, status) {
+                    //请求完成时运行的函数
+                    //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                },
+                error: function (xhr, status, error) {
+                    //如果请求失败要运行的函数。
+                    if (typeof (xhr.responseText) != "undefined")
+                        alert(xhr.status + ":" + xhr.statusText);
+                    else
+                        alert(error.message);
+                }
+            });
+
+            $(btn).attr({ "disabled": "disabled" });
+        }
+
+    </script>
+</body>
+</html>

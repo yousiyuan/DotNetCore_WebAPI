@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_ORDER_WAYBILL_MAP"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="T_ORDER_WAYBILL_MAP.Update">
+      UPDATE T_ORDER_WAYBILL_MAP
+      SET
+      "MAIL_NO" =:MAIL_NO
+      WHERE   "ORDER_NO" =:ORDER_NO
+    </Statement>
+    <Statement Id="T_ORDER_WAYBILL_MAP.GetOMSCode">
+      SELECT ORDER_NO FROM T_ORDER_WAYBILL_MAP WHERE (ORDER_NO = :Value OR mail_no = :Value) AND ROWNUM = '1'
+    </Statement>
+  </Statements>
+</SmartSqlMap>

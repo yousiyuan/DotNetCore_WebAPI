@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_MySql_ORDER_MONITOR"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+      </Where>
+    </Statement>
+    <Statement Id="GetOrderMonitor">
+      select * from T_MySql_ORDER_MONITOR where 1=1
+      <IsNotEmpty Prepend="And" Property="ORDER_NO">
+        ORDER_NO=@ORDER_NO
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="ORDER_SOURCE">
+        ORDER_SOURCE=@ORDER_SOURCE
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="START_TIME">
+        START_TIME=@START_TIME
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="END_TIME">
+        END_TIME=@END_TIME
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="GOT">
+        GOT=@GOT
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="DEPARTURE">
+        DEPARTURE=@DEPARTURE
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="ARRIVAL">
+        ARRIVAL=@ARRIVAL
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="SENT_SCAN">
+        SENT_SCAN=@SENT_SCAN
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="SIGNED">
+        SIGNED=@SIGNED
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="OTHER">
+        OTHER=@OTHER
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="FAILED">
+        FAILED=@FAILED
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="ORDER_STATUS">
+        ORDER_STATUS=@ORDER_STATUS
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="ORDER BY" Property="OrderBy">
+        <Placeholder  Property="OrderBy"/>
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="LIMIT" Property="PageIndex">
+        @PageIndex
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="," Property="PageSize">
+        @PageSize
+      </IsNotEmpty>
+    </Statement>
+    
+    <Statement Id="Total">
+      select COUNT(ID) from T_MySql_ORDER_MONITOR where 1=1
+      <IsNotEmpty Prepend="And" Property="ORDER_NO">
+        ORDER_NO=@ORDER_NO
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="ORDER_SOURCE">
+        ORDER_SOURCE=@ORDER_SOURCE
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="START_TIME">
+        START_TIME=@START_TIME
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="END_TIME">
+        END_TIME=@END_TIME
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="GOT">
+        GOT=@GOT
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="DEPARTURE">
+        DEPARTURE=@DEPARTURE
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="ARRIVAL">
+        ARRIVAL=@ARRIVAL
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="SENT_SCAN">
+        SENT_SCAN=@SENT_SCAN
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="SIGNED">
+        SIGNED=@SIGNED
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="OTHER">
+        OTHER=@OTHER
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="FAILED">
+        FAILED=@FAILED
+      </IsNotEmpty>
+      <IsNotEmpty Prepend="And" Property="ORDER_STATUS">
+        ORDER_STATUS=@ORDER_STATUS
+      </IsNotEmpty>
+    </Statement>
+  </Statements>
+</SmartSqlMap>

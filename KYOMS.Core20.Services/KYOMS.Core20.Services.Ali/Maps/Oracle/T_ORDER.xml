@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_ORDER"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="GetOrderByOutSysNo">
+      SELECT * FROM T_ORDER WHERE OUTSYS_CODE =:OUTSYS_CODE AND ROWNUM=1
+    </Statement>
+    <Statement Id="Cancel">
+      UPDATE T_ORDER SET
+      "ORDER_STATUS" = 30
+      ,"ORDER_CANCEL_TIME" = SYSDATE
+      ,"ORDER_CANCEL_REMARK" =:ORDER_CANCEL_REMARK
+      ,"NEED_ADD_RECORD_BOS" = 1
+      ,need_push_srm=1
+      ,need_push_wbms=0
+      ,last_push_srm_time=null
+      WHERE "OUTSYS_CODE" =:OUTSYS_CODE
+    </Statement>
+    <Statement Id="UpdateMailNo">
+      UPDATE T_ORDER SET
+      NEED_ADD_RECORD_BOS= 0
+      ,NEED_UPDATE_RECORD_BOS=1
+      ,UPDATE_TIME=SYSDATE
+      ,need_push_srm=1
+      ,need_push_wbms=0
+      ,last_push_srm_time=null
+      ,BILL_NO=:BILL_NO
+      ,REMARK2=:REMARK2
+      WHERE OUTSYS_CODE =:OUTSYS_CODE
+    </Statement>
+    <Statement Id="T_ORDER.FindByOrderNo">
+      SELECT * FROM T_ORDER where (ORDER_NO = :ORDER_NO OR OUTSYS_CODE = :OUTSYS_CODE) ORDER BY CREATE_TIME DESC
+    </Statement>
+    <Statement Id="T_ORDER.Update">
+    UPDATE T_ORDER
+       SET "ID" = :ID
+          ,"ORDER_NO" = :ORDER_NO
+          ,"ORDER_SOURCE_TYPE" = :ORDER_SOURCE_TYPE
+          ,"ORDER_STATUS" = :ORDER_STATUS
+          ,"ORDER_SOURCE" = :ORDER_SOURCE
+          ,"ASSIGNSITE_TYPE" = :ASSIGNSITE_TYPE
+          ,"OUTSYS_CODE" = :OUTSYS_CODE
+          ,"OUTSYS_UID" = :OUTSYS_UID
+          ,"CUSTOMER_CODE" = :CUSTOMER_CODE
+          ,"OUTSYS_ORDERCODE" = :OUTSYS_ORDERCODE
+          ,"BIZ_TYPE" = :BIZ_TYPE
+          ,"PICKUP_SITECODE" = :PICKUP_SITECODE
+          ,"SENDTO_SITECODE" = :SENDTO_SITECODE
+          ,"OUTSYS_MEMBERTYPE" = :OUTSYS_MEMBERTYPE
+          ,"SENDER_COMPANYNAME" = :SENDER_COMPANYNAME
+          ,"SENDER_NAME" = :SENDER_NAME
+          ,"SENDER_POSTCODE" = :SENDER_POSTCODE
+          ,"SENDER_MOBILE" = :SENDER_MOBILE
+          ,"SENDER_PHONE" = :SENDER_PHONE
+          ,"SENDER_PROVINCE" = :SENDER_PROVINCE
+          ,"SENDER_CITY" = :SENDER_CITY
+          ,"SENDER_COUNTY" = :SENDER_COUNTY
+          ,"SENDER_ADDRESS" = :SENDER_ADDRESS
+          ,"RECEIVER_COMPANYNAME" = :RECEIVER_COMPANYNAME
+          ,"RECEIVER_NAME" = :RECEIVER_NAME
+          ,"RECEIVER_POSTCODE" = :RECEIVER_POSTCODE
+          ,"RECEIVER_MOBILE" = :RECEIVER_MOBILE
+          ,"RECEIVER_PHONE" = :RECEIVER_PHONE
+          ,"RECEIVER_PROVINCE" = :RECEIVER_PROVINCE
+          ,"RECEIVER_CITY" = :RECEIVER_CITY
+          ,"RECEIVER_COUNTY" = :RECEIVER_COUNTY
+          ,"RECEIVER_ADDRESS" = :RECEIVER_ADDRESS
+          ,"CARGO_NAME" = :CARGO_NAME
+          ,"TOTAL_NUMBER" = :TOTAL_NUMBER
+          ,"TOTAL_WEIGHT" = :TOTAL_WEIGHT
+          ,"TOTAL_VOLUME" = :TOTAL_VOLUME
+          ,"TOTAL_PRICE" = :TOTAL_PRICE
+          ,"TRANSPORT_PRICE" = :TRANSPORT_PRICE
+          ,"WEIGHT_RATE" = :WEIGHT_RATE
+          ,"VOLUME_RATE" = :VOLUME_RATE
+          ,"LEAST_EXPENSES" = :LEAST_EXPENSES
+          ,"OUTSYS_PAYTYPE" = :OUTSYS_PAYTYPE
+          ,"MATERIAL_COST" = :MATERIAL_COST
+          ,"MATERIAL_COSTPRICE" = :MATERIAL_COSTPRICE
+          ,"TRANSPORT_TYPE" = :TRANSPORT_TYPE
+          ,"VISIT_RECEIVE" = :VISIT_RECEIVE
+          ,"VISIT_RECEIVEPRICE" = :VISIT_RECEIVEPRICE
+          ,"DELIVERY_TYPE" = :DELIVERY_TYPE
+          ,"DELIVERY_PRICE" = :DELIVERY_PRICE
+          ,"IS_INSURED_PRICE" = :IS_INSURED_PRICE
+          ,"INSURANCE_VALUE" = :INSURANCE_VALUE
+          ,"INSURANCE_PRICE" = :INSURANCE_PRICE
+          ,"COD_TYPE" = :COD_TYPE
+          ,"REMARK" = :REMARK
+          ,"REMARK2" = :REMARK2
+          ,"COD_PRICE" = :COD_PRICE
+          ,"PROMOTION" = :PROMOTION
+          ,"BACKSIGNBILL" = :BACKSIGNBILL
+          ,"BACKSIGNBILL_PRICE" = :BACKSIGNBILL_PRICE
+          ,"PACKAGE_SERVICE" = :PACKAGE_SERVICE
+          ,"PACKAGE_SERVICEPRICE" = :PACKAGE_SERVICEPRICE
+          ,"WAIT_NOTIFYSEND" = :WAIT_NOTIFYSEND
+          ,"WAIT_NOTIFYSENDPRICE" = :WAIT_NOTIFYSENDPRICE
+          ,"SMS_NOTIFY" = :SMS_NOTIFY
+          ,"SMS_NOTIFYPRICE" = :SMS_NOTIFYPRICE
+          ,"FUEL_SURCHARGE" = :FUEL_SURCHARGE
+          ,"FUEL_SURCHARGE_PRICE" = :FUEL_SURCHARGE_PRICE
+          ,"OTHER_PRICE" = :OTHER_PRICE
+          ,"COD_VALUE" = :COD_VALUE
+          ,"DELIVERY_NOTICE" = :DELIVERY_NOTICE
+          ,"RESERVE_PICKUP_BEGINTIME" = :RESERVE_PICKUP_BEGINTIME
+          ,"RESERVE_PICKUP_ENDTIME" = :RESERVE_PICKUP_ENDTIME
+          ,"OUTSYS_ORDER_CREATEDATE" = :OUTSYS_ORDER_CREATEDATE
+          ,"ASSIGNED_SITE_CODE" = :ASSIGNED_SITE_CODE
+          ,"ASSIGNED_DRIVER_CODE" = :ASSIGNED_DRIVER_CODE
+          ,"ASSIGN_SITE_TIME" = :ASSIGN_SITE_TIME
+          ,"ASSIGN_DRIVER_TIME" = :ASSIGN_DRIVER_TIME
+          ,"PICKUP_FAIL_REASON" = :PICKUP_FAIL_REASON
+          ,"PICKUP_TIME" = :PICKUP_TIME
+          ,"ORDER_CANCEL_BY" = :ORDER_CANCEL_BY
+          ,"ORDER_CANCEL_TIME" = :ORDER_CANCEL_TIME
+          ,"RECIEVE_ORDER_TIME" = :RECIEVE_ORDER_TIME
+          ,"ORDER_CANCEL_REMARK" = :ORDER_CANCEL_REMARK
+          ,"OPERATOR_IP" = :OPERATOR_IP
+          ,"CREATE_BY" = :CREATE_BY
+          ,"CREATE_TIME" = :CREATE_TIME
+          ,"UPDATE_BY" = :UPDATE_BY
+          ,"UPDATE_TIME" = :UPDATE_TIME
+          ,"PICK_UP_OPERATOR" = :PICK_UP_OPERATOR
+          ,"WLB_ORDER_BIZ_TYPE" = :WLB_ORDER_BIZ_TYPE
+          ,"WLB_SERVICE_FLAG" = :WLB_SERVICE_FLAG
+          ,"WLB_SENDER_CUSTOMERID" = :WLB_SENDER_CUSTOMERID
+          ,"WLB_RECEIVER_CUSTOMERID" = :WLB_RECEIVER_CUSTOMERID
+          ,"OUTSYS_TRADENO" = :OUTSYS_TRADENO
+          ,"EXT_FIELDS" = :EXT_FIELDS
+          ,"SEND_STARTTIME" = :SEND_STARTTIME
+          ,"SEND_ENDTIME" = :SEND_ENDTIME
+          ,"SEND_SCHEDULE_DESC" = :SEND_SCHEDULE_DESC
+          ,"WLB_COD_TOTAL_SERVICE_FEE" = :WLB_COD_TOTAL_SERVICE_FEE
+          ,"WLB_COD_BUY_SERVICE_FEE" = :WLB_COD_BUY_SERVICE_FEE
+          ,"WLB_TOTAL_FEE" = :WLB_TOTAL_FEE
+          ,"WLB_GOODS_VALUE" = :WLB_GOODS_VALUE
+          ,"NEED_UPLOAD_STATUS_BOS" = :NEED_UPLOAD_STATUS_BOS
+          ,"NEED_UPDATE_RECORD_BOS" = :NEED_UPDATE_RECORD_BOS
+          ,"NEED_ADD_RECORD_BOS" = :NEED_ADD_RECORD_BOS
+          ,"WLB_CODSPLITFEE" = :WLB_CODSPLITFEE
+          ,"LAST_PUSH_OUTSYS_TIME" = :LAST_PUSH_OUTSYS_TIME
+          ,"PUSH_OUTSYS_STATUS_VER" = :PUSH_OUTSYS_STATUS_VER
+          ,"PUSH_BOS_STATUS_VER" = :PUSH_BOS_STATUS_VER
+          ,"LAST_PUSH_BOS_TIME" = :LAST_PUSH_BOS_TIME
+          ,"PUSH_OUTSYS_FAIL_NUM" = :PUSH_OUTSYS_FAIL_NUM
+          ,"OUTSYS_CUSTOMER_CODE" = :OUTSYS_CUSTOMER_CODE
+          ,"PICKUP_SITE" = :PICKUP_SITE
+          ,"SENDTO_SITE" = :SENDTO_SITE
+          ,"NEED_CREATE_BILL" = :NEED_CREATE_BILL
+          ,"BILL_NO" = :BILL_NO
+          ,need_push_srm = 1
+          ,need_push_wbms = 0
+          ,last_push_srm_time = null
+          ,PUSH_OUTSYS_STATUS = 1
+     WHERE "ID" = :ID
+    </Statement>
+    <Statement Id="T_ORDER.UpdateSite">
+    UPDATE T_ORDER
+       SET "ORDER_STATUS" = :ORDER_STATUS
+          ,"PICKUP_SITECODE" = :PICKUP_SITECODE
+          ,"SENDTO_SITECODE" = :SENDTO_SITECODE
+          ,"PICKUP_SITE" = :PICKUP_SITE
+          ,"ASSIGNED_SITE_CODE" = :ASSIGNED_SITE_CODE
+          ,"PUSH_OUTSYS_STATUS" = :PUSH_OUTSYS_STATUS
+          ,"PUSH_OUTSYS_FAIL_NUM" = :PUSH_OUTSYS_FAIL_NUM
+          ,"SENDTO_SITE" = :SENDTO_SITE
+          ,"ASSIGNSITE_TYPE" = :ASSIGNSITE_TYPE
+     WHERE "ORDER_NO"  = :ORDER_NO
+    </Statement>
+    <Statement Id="T_ORDER.UpdateORDER_STATUSByOutCode">
+    UPDATE T_ORDER
+       SET "ORDER_STATUS" = :ORDER_STATUS
+          ,need_push_srm = 1
+          ,need_push_wbms = 0
+          ,last_push_srm_time = null
+          ,PUSH_OUTSYS_STATUS = 1
+          ,"ORDER_CANCEL_TIME" = :ORDER_CANCEL_TIME
+          ,"ORDER_CANCEL_REMARK" = :ORDER_CANCEL_REMARK
+          ,"ORDER_CANCEL_BY" = :ORDER_CANCEL_BY
+          ,"NEED_ADD_RECORD_BOS" = :NEED_ADD_RECORD_BOS
+     WHERE "OUTSYS_CODE" = :OUTSYS_CODE
+    </Statement>
+    <Statement Id="T_ORDER.FindByOutSysNo">
+    SELECT *
+      FROM T_ORDER
+     WHERE OUTSYS_CODE = :OUTSYS_CODE
+       AND OUTSYS_UID = :OUTSYS_UID
+       AND ROWNUM = '1'
+     ORDER BY CREATE_TIME DESC
+    </Statement>
+  </Statements>
+</SmartSqlMap>

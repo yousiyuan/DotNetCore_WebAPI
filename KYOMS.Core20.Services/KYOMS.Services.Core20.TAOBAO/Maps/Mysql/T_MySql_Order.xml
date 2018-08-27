@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_MySql_Order"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <Statement Id="Insert">
+      INSERT INTO  <Placeholder  Property="tableName"/>
+      (
+      OUTSYS_ORDER_NO
+      ,OUTSYS_BILL_CODE
+      ,ORDER_SOURCE
+      ,MSG_CONTENT
+      ,MSG_TYPE
+      ,REMARK
+      ,IS_SYNC_SUCCESS
+      ,CREATE_BY
+      ,CREATE_TIME
+      ,C1
+      ,C2
+      ,C3
+      )VALUES(
+      @OUTSYS_ORDER_NO
+      ,@OUTSYS_BILL_CODE
+      ,@ORDER_SOURCE
+      ,@MSG_CONTENT
+      ,@MSG_TYPE
+      ,@REMARK
+      ,@IS_SYNC_SUCCESS
+      ,@CREATE_BY
+      ,@CREATE_TIME
+      ,@C1
+      ,@C2
+      ,@C3
+      )
+    </Statement>
+
+    <Statement Id="Insert2">
+      INSERT INTO  <Placeholder  Property="tableName"/>
+      (
+      OUTSYS_ORDER_NO
+      ,OUTSYS_BILL_CODE
+      ,ORDER_SOURCE
+      ,MSG_CONTENT
+      ,MSG_TYPE
+      ,REMARK
+      ,IS_SYNC_SUCCESS
+      ,CREATE_BY
+      ,CREATE_TIME
+      ,C1
+      ,C2
+      ,C3
+      )VALUES
+      <For Separator="," Prepend="" Property="t_MySql_Orders" Open="" Close="" Key="">
+        (
+        @OUTSYS_ORDER_NO
+        ,@OUTSYS_BILL_CODE
+        ,@ORDER_SOURCE
+        ,@MSG_CONTENT
+        ,@MSG_TYPE
+        ,@REMARK
+        ,@IS_SYNC_SUCCESS
+        ,@CREATE_BY
+        ,@CREATE_TIME
+        ,@C1
+        ,@C2
+        ,@C3
+        )
+      </For>
+    </Statement>
+  </Statements>
+</SmartSqlMap>

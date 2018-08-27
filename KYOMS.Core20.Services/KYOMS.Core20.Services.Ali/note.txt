@@ -1,0 +1,18 @@
+DockerFile绝对路径
+/opt/app/kyoms.core20.services.ali/
+
+创建镜像
+[root@CentOS7 kyoms.core20.services.ali]# 
+docker build -t kyoms.core20.services.ali:2.0 ./
+
+创建并启动容器，映射一个数据卷
+[root@CentOS7 kyoms.core20.services.ali]# 
+docker run -it -p 15500:15500 \
+--name box_kyoms.core20.services.ali \
+--restart=always \
+-v /opt/app/log:/app/kyoms.core20.services.ali/log \
+kyoms.core20.services.ali:2.0
+
+
+
+https://hub.docker.com/r/ericmend/aspnetcore-oracleclient/

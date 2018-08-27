@@ -1,0 +1,11 @@
+
+C:\Users\Administrator>cd E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Core20.Services.Cainiao
+
+C:\Users\Administrator>e:
+
+E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Core20.Services.Cainiao>dotnet publish -r centos.7-x64 -c release
+
+
+
+在Windows环境下发布
+dotnet publish -c Release --self-contained -r win-x64

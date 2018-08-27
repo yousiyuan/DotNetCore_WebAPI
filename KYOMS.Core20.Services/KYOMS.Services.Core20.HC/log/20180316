@@ -1,0 +1,312 @@
+﻿[Header]
+14:02:35 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:02:36 ERROR KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: VerifySettings
+Record Msg: Object reference not set to an instance of an object.
+[Header]
+14:02:45 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:02:45 ERROR KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: VerifySettings
+Record Msg: Object reference not set to an instance of an object.
+[Header]
+14:22:31 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:22:31 ERROR KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: VerifySettings
+Record Msg: Object reference not set to an instance of an object.
+[Header]
+14:23:34 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:23:34 ERROR KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: VerifySettings
+Record Msg: Object reference not set to an instance of an object.
+[Header]
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: InitZooKeeperConfiger
+Record Msg: 使用节点172.16.37.30连接zookeeper成功
+
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：13毫秒
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：1毫秒
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：1毫秒
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：1毫秒
+14:25:59 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：1毫秒
+14:26:00 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 配置文件替换完毕，本次运行耗时：76毫秒
+
+[Header]
+14:33:31 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: InitZooKeeperConfiger
+Record Msg: 使用节点172.16.37.30连接zookeeper成功
+
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：8毫秒
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：13毫秒
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：9毫秒
+14:33:32 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 配置文件替换完毕，本次运行耗时：72毫秒
+
+[Header]
+14:36:01 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: InitZooKeeperConfiger
+Record Msg: 使用节点172.16.37.30连接zookeeper成功
+
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：32毫秒
+14:36:02 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 配置文件替换完毕，本次运行耗时：104毫秒
+
+[Footer]
+[Header]
+14:36:47 DEBUG KYOMS.Core20.Application.T_MySql_OrderService 18 
+Method Name: MoveNext
+Record Msg: 原始请求内容：{"logistics_interface":"{\"logisticCode\":\"HC20141126062685805\",\"logisticCompanyID\":\"DBWULIU\",\"businessNetworkNo\":\"businessNetworkNo\",\"toNetworkNo\":\"toNetworkNo\",\"sender\":{\"companyName\":\"慧聪互联信息技术有限公司\",\"name\":\"慧聪人\",\"mobile\":\"13691361281\",\"phone\":\"010-82297871\",\"address\":\"黄河路55号\",\"county\":\"中国\",\"province\":\"湖南\",\"city\":\"株洲\",\"area\":\"天元区\",\"postCode\":\"334600\"},\"receiver\":{\"companyName\":\"远成集团\",\"name\":\"远成人\",\"mobile\":\"13691361281\",\"phone\":\"021-82297871\",\"address\":\"水厂路239号\",\"county\":\"中国\",\"province\":\"上海\",\"city\":\"普陀\",\"area\":\"桃浦镇\",\"postCode\":\"334600\"},\"gmtCommit\":\"2018-03-08 8:58:05\",\"scheduleTime\":\"2018-03-08 8:58:06\",\"cargoName\":\"金\",\"totalNumber\":\"1\",\"totalVolume\":\"10\",\"totalWeight\":\"100\",\"weightRate\":\"2\",\"volumeRate\":\"3\",\"leastExpenses\":\"10000\",\"transportType\":\"4\",\"transportName\":\"机\",\"vistReceive\":\"1\",\"vistReceivePrice\":\"200\",\"deliveryType\":\"0\",\"deliveryPrice\":\"300\",\"insuranceType\":\"BJ\",\"insuranceValue\":\"400\",\"insurancePrice\":\"500\",\"waitNotifySend\":\"Y\",\"waitNotifySendPrice\":\"600\",\"waitNotifyDelivery\":\"5\",\"waitNotifyDeliveryPrice\":\"700\",\"codType\":\"6\",\"codValue\":\"800\",\"codPrice\":\"900\",\"fuelSurcharge\":\"Y\",\"fuelSurchargePrice\":\"1000\",\"packageService\":\"Y\",\"packageServicePrice\":\"1100\",\"smsNotify\":\"Y\",\"smsNotifyPrice\":\"1200\",\"backSignBill\":\"Y\",\"backSignBillPrice\":\"1300\",\"inspection\":\"Y\",\"inspectionPrice\":\"1500\",\"havePayPrice\":\"1600\",\"freightRateDiscount\":\"0.1\",\"totalprice\":\"1400\",\"noSalePrice\":\"7\",\"orderSubtract\":\"0\",\"payType\":\"0\",\"payTypePrice\":\"0\",\"promotionRule\":\"轻拿轻放\",\"remark\":\"有贵重物品，不要瞎搞\"}","data_digest":"SOlu/mFjManbIKJDHeEG7Q==","msg_type":"TMS_WAYBILL_DETAIL_SEND_BATCH","msg_id":"0bba705a15138297507527055e","ecCompanyId":null,"timestamp":"15255255414"}
+[Header]
+14:40:20 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: InitZooKeeperConfiger
+Record Msg: 使用节点172.16.37.30连接zookeeper成功
+
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：11毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:40:21 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 配置文件替换完毕，本次运行耗时：85毫秒
+
+[Footer]
+[Header]
+14:41:40 DEBUG KYOMS.Core20.Application.T_MySql_OrderService 21 
+Method Name: MoveNext
+Record Msg: 原始请求内容：{"logistics_interface":"{\"logisticCode\":\"HC20141126062685805\",\"logisticCompanyID\":\"DBWULIU\",\"businessNetworkNo\":\"businessNetworkNo\",\"toNetworkNo\":\"toNetworkNo\",\"sender\":{\"companyName\":\"慧聪互联信息技术有限公司\",\"name\":\"慧聪人\",\"mobile\":\"13691361281\",\"phone\":\"010-82297871\",\"address\":\"黄河路55号\",\"county\":\"中国\",\"province\":\"湖南\",\"city\":\"株洲\",\"area\":\"天元区\",\"postCode\":\"334600\"},\"receiver\":{\"companyName\":\"远成集团\",\"name\":\"远成人\",\"mobile\":\"13691361281\",\"phone\":\"021-82297871\",\"address\":\"水厂路239号\",\"county\":\"中国\",\"province\":\"上海\",\"city\":\"普陀\",\"area\":\"桃浦镇\",\"postCode\":\"334600\"},\"gmtCommit\":\"2018-03-08 8:58:05\",\"scheduleTime\":\"2018-03-08 8:58:06\",\"cargoName\":\"金\",\"totalNumber\":\"1\",\"totalVolume\":\"10\",\"totalWeight\":\"100\",\"weightRate\":\"2\",\"volumeRate\":\"3\",\"leastExpenses\":\"10000\",\"transportType\":\"4\",\"transportName\":\"机\",\"vistReceive\":\"1\",\"vistReceivePrice\":\"200\",\"deliveryType\":\"0\",\"deliveryPrice\":\"300\",\"insuranceType\":\"BJ\",\"insuranceValue\":\"400\",\"insurancePrice\":\"500\",\"waitNotifySend\":\"Y\",\"waitNotifySendPrice\":\"600\",\"waitNotifyDelivery\":\"5\",\"waitNotifyDeliveryPrice\":\"700\",\"codType\":\"6\",\"codValue\":\"800\",\"codPrice\":\"900\",\"fuelSurcharge\":\"Y\",\"fuelSurchargePrice\":\"1000\",\"packageService\":\"Y\",\"packageServicePrice\":\"1100\",\"smsNotify\":\"Y\",\"smsNotifyPrice\":\"1200\",\"backSignBill\":\"Y\",\"backSignBillPrice\":\"1300\",\"inspection\":\"Y\",\"inspectionPrice\":\"1500\",\"havePayPrice\":\"1600\",\"freightRateDiscount\":\"0.1\",\"totalprice\":\"1400\",\"noSalePrice\":\"7\",\"orderSubtract\":\"0\",\"payType\":\"0\",\"payTypePrice\":\"0\",\"promotionRule\":\"轻拿轻放\",\"remark\":\"有贵重物品，不要瞎搞\"}","data_digest":"SOlu/mFjManbIKJDHeEG7Q==","msg_type":"TMS_WAYBILL_DETAIL_SEND_BATCH","msg_id":"0bba705a15138297507527055e","ecCompanyId":null,"timestamp":"15255255414"}
+[Header]
+14:46:05 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: InitZooKeeperConfiger
+Record Msg: 使用节点172.16.37.30连接zookeeper成功
+
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：28毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：8毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：64毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：9毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：5毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：6毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：5毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:46:06 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 配置文件替换完毕，本次运行耗时：192毫秒
+
+[Footer]
+[Header]
+14:46:35 DEBUG KYOMS.Core20.Application.MySql.HC_MySql_OrderService 7 
+Method Name: MoveNext
+Record Msg: 原始请求内容：{"logistics_interface":"{\"logisticCode\":\"HC20141126062685805\",\"logisticCompanyID\":\"DBWULIU\",\"businessNetworkNo\":\"businessNetworkNo\",\"toNetworkNo\":\"toNetworkNo\",\"sender\":{\"companyName\":\"慧聪互联信息技术有限公司\",\"name\":\"慧聪人\",\"mobile\":\"13691361281\",\"phone\":\"010-82297871\",\"address\":\"黄河路55号\",\"county\":\"中国\",\"province\":\"湖南\",\"city\":\"株洲\",\"area\":\"天元区\",\"postCode\":\"334600\"},\"receiver\":{\"companyName\":\"远成集团\",\"name\":\"远成人\",\"mobile\":\"13691361281\",\"phone\":\"021-82297871\",\"address\":\"水厂路239号\",\"county\":\"中国\",\"province\":\"上海\",\"city\":\"普陀\",\"area\":\"桃浦镇\",\"postCode\":\"334600\"},\"gmtCommit\":\"2018-03-08 8:58:05\",\"scheduleTime\":\"2018-03-08 8:58:06\",\"cargoName\":\"金\",\"totalNumber\":\"1\",\"totalVolume\":\"10\",\"totalWeight\":\"100\",\"weightRate\":\"2\",\"volumeRate\":\"3\",\"leastExpenses\":\"10000\",\"transportType\":\"4\",\"transportName\":\"机\",\"vistReceive\":\"1\",\"vistReceivePrice\":\"200\",\"deliveryType\":\"0\",\"deliveryPrice\":\"300\",\"insuranceType\":\"BJ\",\"insuranceValue\":\"400\",\"insurancePrice\":\"500\",\"waitNotifySend\":\"Y\",\"waitNotifySendPrice\":\"600\",\"waitNotifyDelivery\":\"5\",\"waitNotifyDeliveryPrice\":\"700\",\"codType\":\"6\",\"codValue\":\"800\",\"codPrice\":\"900\",\"fuelSurcharge\":\"Y\",\"fuelSurchargePrice\":\"1000\",\"packageService\":\"Y\",\"packageServicePrice\":\"1100\",\"smsNotify\":\"Y\",\"smsNotifyPrice\":\"1200\",\"backSignBill\":\"Y\",\"backSignBillPrice\":\"1300\",\"inspection\":\"Y\",\"inspectionPrice\":\"1500\",\"havePayPrice\":\"1600\",\"freightRateDiscount\":\"0.1\",\"totalprice\":\"1400\",\"noSalePrice\":\"7\",\"orderSubtract\":\"0\",\"payType\":\"0\",\"payTypePrice\":\"0\",\"promotionRule\":\"轻拿轻放\",\"remark\":\"有贵重物品，不要瞎搞\"}","data_digest":"SOlu/mFjManbIKJDHeEG7Q==","msg_type":"TMS_WAYBILL_DETAIL_SEND_BATCH","msg_id":"0bba705a15138297507527055e","ecCompanyId":null,"timestamp":"15255255414"}
+14:46:46 ERROR KYOMS.Core20.Application.MySql.HC_MySql_OrderService 4 
+Method Name: ResponseHandle
+Record Msg: 返回内容：True{"logisticCode":"","result":true,"resultCode":3002,"resultInfo":"添加成功","reason":"添加成功"}
+14:52:19 DEBUG KYOMS.Core20.Application.MySql.HC_MySql_OrderService 27 
+Method Name: MoveNext
+Record Msg: 原始请求内容：{"logistics_interface":"{\"logisticCode\":\"HC20141126062685805\",\"logisticCompanyID\":\"DBWULIU\",\"businessNetworkNo\":\"businessNetworkNo\",\"toNetworkNo\":\"toNetworkNo\",\"sender\":{\"companyName\":\"慧聪互联信息技术有限公司\",\"name\":\"慧聪人\",\"mobile\":\"13691361281\",\"phone\":\"010-82297871\",\"address\":\"黄河路55号\",\"county\":\"中国\",\"province\":\"湖南\",\"city\":\"株洲\",\"area\":\"天元区\",\"postCode\":\"334600\"},\"receiver\":{\"companyName\":\"远成集团\",\"name\":\"远成人\",\"mobile\":\"13691361281\",\"phone\":\"021-82297871\",\"address\":\"水厂路239号\",\"county\":\"中国\",\"province\":\"上海\",\"city\":\"普陀\",\"area\":\"桃浦镇\",\"postCode\":\"334600\"},\"gmtCommit\":\"2018-03-08 8:58:05\",\"scheduleTime\":\"2018-03-08 8:58:06\",\"cargoName\":\"金\",\"totalNumber\":\"1\",\"totalVolume\":\"10\",\"totalWeight\":\"100\",\"weightRate\":\"2\",\"volumeRate\":\"3\",\"leastExpenses\":\"10000\",\"transportType\":\"4\",\"transportName\":\"机\",\"vistReceive\":\"1\",\"vistReceivePrice\":\"200\",\"deliveryType\":\"0\",\"deliveryPrice\":\"300\",\"insuranceType\":\"BJ\",\"insuranceValue\":\"400\",\"insurancePrice\":\"500\",\"waitNotifySend\":\"Y\",\"waitNotifySendPrice\":\"600\",\"waitNotifyDelivery\":\"5\",\"waitNotifyDeliveryPrice\":\"700\",\"codType\":\"6\",\"codValue\":\"800\",\"codPrice\":\"900\",\"fuelSurcharge\":\"Y\",\"fuelSurchargePrice\":\"1000\",\"packageService\":\"Y\",\"packageServicePrice\":\"1100\",\"smsNotify\":\"Y\",\"smsNotifyPrice\":\"1200\",\"backSignBill\":\"Y\",\"backSignBillPrice\":\"1300\",\"inspection\":\"Y\",\"inspectionPrice\":\"1500\",\"havePayPrice\":\"1600\",\"freightRateDiscount\":\"0.1\",\"totalprice\":\"1400\",\"noSalePrice\":\"7\",\"orderSubtract\":\"0\",\"payType\":\"0\",\"payTypePrice\":\"0\",\"promotionRule\":\"轻拿轻放\",\"remark\":\"有贵重物品，不要瞎搞\"}","data_digest":"SOlu/mFjManbIKJDHeEG7Q==","msg_type":"TMS_WAYBILL_DETAIL_SEND_BATCH","msg_id":"0bba705a15138297507527055e","ecCompanyId":null,"timestamp":"15255255414"}
+14:53:04 ERROR KYOMS.Core20.Application.MySql.HC_MySql_OrderService 4 
+Method Name: ResponseHandle
+Record Msg: 返回内容：True{"logisticCode":"","result":true,"resultCode":3002,"resultInfo":"添加成功","reason":"添加成功"}
+[Header]
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: _getInstance
+Record Msg: 单例模式创建对象完成，E:\work\01.trunk\Source\KYOMS.Core20\KYOMS.Core20.Services\KYOMS.Services.Core20.HC\bin\Debug\netcoreapp2.0\config\zsettings.config
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: InitZooKeeperConfiger
+Record Msg: 使用节点172.16.37.30连接zookeeper成功
+
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：6毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：3毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：4毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: MatchReplace
+Record Msg: Zookeeper查询完毕，查询用时：2毫秒
+14:54:04 INFO  KYOMS.Core20.Common.Zookeeper.ZookeeperConfigCenterManager 1 
+Method Name: <Start>b__13_0
+Record Msg: 配置文件替换完毕，本次运行耗时：76毫秒
+
+[Footer]
+[Header]
+14:54:39 DEBUG KYOMS.Core20.Application.MySql.HC_MySql_OrderService 6 
+Method Name: MoveNext
+Record Msg: 原始请求内容：{"logistics_interface":"{\"logisticCode\":\"HC20141126062685805\",\"logisticCompanyID\":\"DBWULIU\",\"businessNetworkNo\":\"businessNetworkNo\",\"toNetworkNo\":\"toNetworkNo\",\"sender\":{\"companyName\":\"慧聪互联信息技术有限公司\",\"name\":\"慧聪人\",\"mobile\":\"13691361281\",\"phone\":\"010-82297871\",\"address\":\"黄河路55号\",\"county\":\"中国\",\"province\":\"湖南\",\"city\":\"株洲\",\"area\":\"天元区\",\"postCode\":\"334600\"},\"receiver\":{\"companyName\":\"远成集团\",\"name\":\"远成人\",\"mobile\":\"13691361281\",\"phone\":\"021-82297871\",\"address\":\"水厂路239号\",\"county\":\"中国\",\"province\":\"上海\",\"city\":\"普陀\",\"area\":\"桃浦镇\",\"postCode\":\"334600\"},\"gmtCommit\":\"2018-03-08 8:58:05\",\"scheduleTime\":\"2018-03-08 8:58:06\",\"cargoName\":\"金\",\"totalNumber\":\"1\",\"totalVolume\":\"10\",\"totalWeight\":\"100\",\"weightRate\":\"2\",\"volumeRate\":\"3\",\"leastExpenses\":\"10000\",\"transportType\":\"4\",\"transportName\":\"机\",\"vistReceive\":\"1\",\"vistReceivePrice\":\"200\",\"deliveryType\":\"0\",\"deliveryPrice\":\"300\",\"insuranceType\":\"BJ\",\"insuranceValue\":\"400\",\"insurancePrice\":\"500\",\"waitNotifySend\":\"Y\",\"waitNotifySendPrice\":\"600\",\"waitNotifyDelivery\":\"5\",\"waitNotifyDeliveryPrice\":\"700\",\"codType\":\"6\",\"codValue\":\"800\",\"codPrice\":\"900\",\"fuelSurcharge\":\"Y\",\"fuelSurchargePrice\":\"1000\",\"packageService\":\"Y\",\"packageServicePrice\":\"1100\",\"smsNotify\":\"Y\",\"smsNotifyPrice\":\"1200\",\"backSignBill\":\"Y\",\"backSignBillPrice\":\"1300\",\"inspection\":\"Y\",\"inspectionPrice\":\"1500\",\"havePayPrice\":\"1600\",\"freightRateDiscount\":\"0.1\",\"totalprice\":\"1400\",\"noSalePrice\":\"7\",\"orderSubtract\":\"0\",\"payType\":\"0\",\"payTypePrice\":\"0\",\"promotionRule\":\"轻拿轻放\",\"remark\":\"有贵重物品，不要瞎搞\"}","data_digest":"SOlu/mFjManbIKJDHeEG7Q==","msg_type":"TMS_WAYBILL_DETAIL_SEND_BATCH","msg_id":"0bba705a15138297507527055e","ecCompanyId":null,"timestamp":"15255255414"}
+14:54:59 ERROR KYOMS.Core20.Application.MySql.HC_MySql_OrderService 28 
+Method Name: ResponseHandle
+Record Msg: 返回内容：True{"logisticCode":"","result":true,"resultCode":3002,"resultInfo":"添加成功","reason":"添加成功"}

@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>运单状态监控页</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/bootstrap-table/dist/bootstrap-table.min.css" />
+    <link href="/lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-mac-osx.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/bootstrap-table/dist/bootstrap-table.min.js"></script>
+
+    <script src="/lib/bootstrap-table/dist/extensions/export/bootstrap-table-export.min.js"></script>
+    <script src="/lib/bootstrap-table/dist/extensions/export/tableExport.min.js"></script>
+    <script src="/lib/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+    
+    <script src="/lib/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script src="/lib/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script src="/lib/pace/pace.js"></script>
+
+</head>
+<body>
+    <div class="topPanel">
+        <div class="search">
+            <div class="input-group">
+                <div>
+                    <span>订单号:<input id="ORDER_NO" type="text" class="form-control" placeholder="订单号" style="width: 200px;"></span>
+                    <span>
+                        订单创建日期:
+                        <input readonly="readonly" id="START_TIME" type="text" data-date-format="yyyy-mm-dd" class="form-control" placeholder="开始日期" style="width: 200px;">
+                        <span>
+                            <i class="glyphicon glyphicon-remove" id="remove_stime" title="清空"></i>
+                        </span>
+                    </span>
+                    <span>
+                        &nbsp;&nbsp;~<input readonly="readonly" id="END_TIME" type="text" data-date-format="yyyy-mm-dd" class="form-control" placeholder="结束日期" style="width: 200px;">
+                        <span>
+                            <i class="glyphicon glyphicon-remove" id="remove_etime" title="清空"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        是否揽件:
+                        <select id="GOT" class="form-control">
+                            <option value="">全部</option>
+                            <option value="1">是</option>
+                            <option value="0">否</option>
+                        </select>
+                    </span>
+                    <span>
+                        是否发件:
+                        <select id="DEPARTURE" class="form-control">
+                            <option value="">全部</option>
+                            <option value="1">是</option>
+                            <option value="0">否</option>
+                        </select>
+                    </span>
+                    <span>
+                        是否到件:
+                        <select id="ARRIVAL" class="form-control">
+                            <option value="">全部</option>
+                            <option value="1">是</option>
+                            <option value="0">否</option>
+                        </select>
+                    </span>
+                    <span>
+                        是否派件:
+                        <select id="SENT_SCAN" class="form-control">
+                            <option value="">全部</option>
+                            <option value="1">是</option>
+                            <option value="0">否</option>
+                        </select>
+                    </span>
+                    <span>
+                        是否签收:
+                        <select id="SIGNED" class="form-control">
+                            <option value="">全部</option>
+                            <option value="1">是</option>
+                            <option value="0">否</option>
+                        </select>
+                    </span>
+                    <span>
+                        问题件:
+                        <select id="OTHER" class="form-control">
+                            <option value="">全部</option>
+                            <option value="1">是</option>
+                            <option value="0">否</option>
+                        </select>
+                    </span>
+                    <span>
+                        异常签收:
+                        <select id="OTHER" class="form-control">
+                            <option value="">全部</option>
+                            <option value="1">是</option>
+                            <option value="0">否</option>
+                        </select>
+                    </span>
+                    <span>
+                        订单状态:
+                        <select id="ORDER_STATUS" class="form-control">
+                            <option value="">全部</option>
+                            <option value="1">已完成</option>
+                            <option value="0">未完成</option>
+                        </select>
+                    </span>
+                    <span>
+                        <button id="btn_search" type="button" class="btn  btn-info glyphicon glyphicon-search" style="width: 76px;">&nbsp;搜索&nbsp;<i class="fa fa-search"></i></button>
+
+                        <button id="btn_reset" type="button" class="btn  btn-default glyphicon glyphicon-refresh" style="width: 76px;">&nbsp;重置&nbsp;<i class="fa fa-repeat"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Grid界面-->
+    <div class="table-responsive" style="overflow-x: inherit; margin:16px;">
+        <table class="table table-hover" id="userTable" style="cursor:pointer;"></table>
+    </div>
+    <!--Grid界面-->
+    <script src="/js/index.js"></script>
+</body>
+</html>

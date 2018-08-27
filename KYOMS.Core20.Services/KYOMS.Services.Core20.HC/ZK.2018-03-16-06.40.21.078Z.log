@@ -1,0 +1,12 @@
+[2018-03-16 06:41:39.930 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 7456ms for sessionid 0x262236c866b1768] 	
+[2018-03-16 06:41:43.146 GMT 	WARNING 	ClientCnxn 	Unable to reconnect to ZooKeeper service, session 0x262236c866b1768 has expired] 	
+[2018-03-16 06:41:43.213 GMT 	WARNING 	ClientCnxn 	!!!Session 0x262236c866b1768 for server {172.16.37.30:2181}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: org.apache.zookeeper.ClientCnxn+SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x262236c866b1768 has expired
+   at org.apache.zookeeper.ClientCnxn.onConnected(Int32 _negotiatedSessionTimeout, Int64 _sessionId, Byte[] _sessionPasswd, Boolean isRO)
+   at org.apache.zookeeper.ClientCnxnSocket.readConnectResult()
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doIO()
+   at org.apache.zookeeper.ClientCnxnSocketNIO.<doTransport>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at org.apache.zookeeper.ClientCnxn.<startSendTask>d__60.MoveNext()

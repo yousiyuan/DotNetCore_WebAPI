@@ -1,0 +1,105 @@
+﻿[Header]
+2018-04-13 16:25:27,638 INFO  Default [1]  
+使用节点172.16.37.30连接zookeeper成功
+
+[Header]
+2018-04-13 16:25:27,670 INFO  Default [1]  
+检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+[Header]
+2018-04-13 16:25:27,675 INFO  Default [1]  
+当前Zookeeper路径:/NetCore.OMS/config/DEV1.0/MySql/MySqlConnectionString
+[Header]
+2018-04-13 16:25:27,678 INFO  Default [1]  
+Zookpeer返回结果:Server=172.16.36.62;Port=3306;Database=KYOMS;Uid=DEV;Pwd=DEV;convert zero datetime=True;Allow User Variables=True
+[Header]
+2018-04-13 16:25:27,680 INFO  Default [1]  
+Zookeeper查询完毕，查询用时：5毫秒
+[Header]
+2018-04-13 16:25:27,685 INFO  Default [1]  
+当前Zookeeper路径:/NetCore.OMS/config/DEV1.0/Oracle/OracleConnectionString
+[Header]
+2018-04-13 16:25:27,689 INFO  Default [1]  
+Zookpeer返回结果:Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.36.13)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=R_OMS_C)));Persist Security Info=True;User ID=DEV;Password=DEV;
+[Header]
+2018-04-13 16:25:27,693 INFO  Default [1]  
+Zookeeper查询完毕，查询用时：7毫秒
+[Header]
+2018-04-13 16:25:27,798 INFO  Default [1]  
+配置文件替换完毕，本次运行耗时：126毫秒
+
+[Header]
+2018-04-13 16:25:46,500 INFO  Default [9]  
+编辑订单EditOrder原始请求报文：logistics_interface=%7B%22totalVolume%22%3A%2210%22%2C%22serviceType%22%3A%22001%22%2C%22totalNumber%22%3A%2220%22%2C%22packageServicePrice%22%3A%225.00%22%2C%22totalPrice%22%3A%22100%22%2C%22smsNotifyPrice%22%3A%225.00%22%2C%22materialCost%22%3A%22Y%22%2C%22remark%22%3A%22%E6%97%A0%22%2C%22toNetworkNo%22%3A%22S2%22%2C%22codType%22%3A%221%22%2C%22businessNetworkNo%22%3A%22S1%22%2C%22payType%22%3A%222%22%2C%22backSignBillPrice%22%3A%222.00%22%2C%22otherPrice%22%3A%221.00%22%2C%22codPrice%22%3A%222.00%22%2C%22extendFields%22%3A%22test%2Cddte%3B%22%2C%22weightRate%22%3A%2212%22%2C%22transportType%22%3A%22SDFG%22%2C%22waitNotifySend%22%3A%22N%22%2C%22backSignBill%22%3A%22Y%22%2C%22fuelSurchargePrice%22%3A%222.00%22%2C%22receiver%22%3A%7B%22address%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E4%BD%99%E6%9D%AD%E5%8C%BA%E6%96%87%E4%B8%80%E8%A5%BF%E8%B7%AF969%E5%8F%B7%E6%B7%98%E5%AE%9D%E5%9F%8E%22%2C%22province%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%22%2C%22phone%22%3A%220571-85022088-30000%22%2C%22city%22%3A%22%E6%9D%AD%E5%B7%9E%E5%B8%82%22%2C%22companyName%22%3A%22%E8%8F%9C%E9%B8%9F%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%22%2C%22name%22%3A%22%E5%BC%A0%E4%B8%89%22%2C%22mobile%22%3A%2218668015381%22%2C%22county%22%3A%22%E4%BD%99%E6%9D%AD%E5%8C%BA%22%2C%22postCode%22%3A%22510200%22%7D%2C%22vistReceive%22%3A%22SSDD%22%2C%22leastExpenses%22%3A%2210.00%22%2C%22deliveryType%22%3A%221%22%2C%22packageService%22%3A%225.00%22%2C%22waitNotifySendPrice%22%3A%221.00%22%2C%22logisticCompanyID%22%3A%22964898912%22%2C%22deliveryPrice%22%3A%225.00%22%2C%22volumeRate%22%3A%2211%22%2C%22vistReceivePrice%22%3A%222.00%22%2C%22codValue%22%3A%22100.00%22%2C%22materialCostPrice%22%3A%222.00%22%2C%22insuranceValue%22%3A%225.00%22%2C%22transportPrice%22%3A%221.00%22%2C%22cargoName%22%3A%22%E6%B0%B4%E6%9E%9C%22%2C%22extendParam%22%3A%2212358622%22%2C%22sender%22%3A%7B%22address%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E8%92%8B%E6%9D%91%22%2C%22province%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%22%2C%22phone%22%3A%220571-85022088-30000%22%2C%22city%22%3A%22%E6%9D%AD%E5%B7%9E%E5%B8%82%22%2C%22companyName%22%3A%22%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%EF%BC%88%E4%B8%AD%E5%9B%BD%EF%BC%89%E8%BD%AF%E4%BB%B6%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%22%2C%22name%22%3A%22%E5%BC%A0%E4%B8%89%22%2C%22mobile%22%3A%2213105713432%22%2C%22county%22%3A%22%E8%A5%BF%E6%B9%96%E5%8C%BA%22%2C%22postCode%22%3A%22510020%22%7D%2C%22insurancePrice%22%3A%226.00%22%2C%22smsNotify%22%3A%22Y%22%2C%22totalWeight%22%3A%223%22%2C%22gmtUpdated%22%3A%221300974726000%22%2C%22logisticID%22%3A%22LP00094865332192%22%2C%22mailNo%22%3A%22300041157989%22%2C%22memberType%22%3A%22POW%22%2C%22fuelSurcharge%22%3A%22N%22%2C%22promotion%22%3A%22%E5%A4%A7%E4%BF%83%22%7D&data_digest=WboqiWxcucQSlVRVH9qI2w%3D%3D&partner_code=2460304407_385&from_code=logisticsmarket-center&msg_type=HY_UPDATE_ORDER_NOTIFY&msg_id=LP00094865332192 
+
+[Header]
+2018-04-13 16:25:46,511 INFO  Default [9]  
+2018/4/13 16:25:46【用户登录】
+收到的Key:WboqiWxcucQSlVRVH9qI2w==
+产生的Key:WboqiWxcucQSlVRVH9qI2w==
+收到的Key校验合法,验证通过
+[Header]
+2018-04-13 16:25:53,861 INFO  Default [9]  
+{"logisticID":"LP00094865332192","result":false,"resultCode":"1001","resultInfo":"修改订单失败","reason":"此单已确认,无法进行此操作."} 
+
+[Header]
+2018-04-13 16:26:22,821 INFO  Default [19]  
+application/json添加订单AddOrder原始请求报文：logistics_interface=%7B%22totalVolume%22%3A%220.00%22%2C%22totalNumber%22%3A%221%22%2C%22backSignBill%22%3A%220%22%2C%22bizType%22%3A%22ZX%22%2C%22receiver%22%3A%7B%22address%22%3A%22%E4%BD%93%E8%82%B2%E8%A5%BF%E8%B7%AF337%E5%8F%B7%EF%BC%88%E4%B8%80%E9%98%B3%E4%BA%94%E9%87%91%E5%BA%97%EF%BC%89%22%2C%22province%22%3A%22%E6%B9%96%E5%8C%97%E7%9C%81%22%2C%22phone%22%3A%22%22%2C%22city%22%3A%22%E5%AD%9D%E6%84%9F%E5%B8%82%22%2C%22companyName%22%3A%22b2b-60901590%22%2C%22name%22%3A%22%E8%8C%83%E8%BF%9B%E6%96%87%22%2C%22mobile%22%3A%2215072571132%22%2C%22county%22%3A%22%E5%AD%9D%E5%8D%97%E5%8C%BA%22%2C%22postCode%22%3A%22432100%22%7D%2C%22vistReceive%22%3A%22N%22%2C%22deliveryType%22%3A%220%22%2C%22materialCost%22%3A%22N%22%2C%22logisticCompanyID%22%3A%222460304407_385%22%2C%22mailNo%22%3A%22300041157989%22%2C%22payType%22%3A%224%22%2C%22cargoName%22%3A%22E27%E5%B0%8F%E7%9B%B4%E5%8F%A3%E8%9E%BA%E5%8F%A3%E5%90%8A%E7%81%AF%E5%A4%B4401+%E7%AD%89%E5%A4%9A%E4%BB%B6%22%2C%22sender%22%3A%7B%22address%22%3A%22%E6%A3%89%E6%B9%96%E9%95%87%E5%AF%8C%E9%A2%86%E5%B7%A5%E4%B8%9A%E5%8C%BA%22%2C%22province%22%3A%22%E5%B9%BF%E4%B8%9C%E7%9C%81%22%2C%22phone%22%3A%22%22%2C%22city%22%3A%22%E6%8F%AD%E9%98%B3%E5%B8%82%22%2C%22companyName%22%3A%22%E5%B9%BF%E4%B8%9C%E6%8F%AD%E9%98%B3%E5%A5%A5%E5%8F%91%E7%94%B5%E5%99%A8%E5%8E%82%22%2C%22name%22%3A%22%E7%8E%8B%E6%B0%B8%E7%BE%A4%22%2C%22mobile%22%3A%2213802323624%22%2C%22county%22%3A%22%E6%8F%AD%E8%A5%BF%E5%8E%BF%22%2C%22postCode%22%3A%22000000%22%7D%2C%22smsNotify%22%3A%22N%22%2C%22totalWeight%22%3A%220.00%22%2C%22gmtCommit%22%3A%221520352090000%22%2C%22logisticID%22%3A%22LP00094865332192%22%2C%22aliUID%22%3A%22964898912%22%2C%22memberType%22%3A%22PT%22%2C%22waitNotifySend%22%3A%22N%22%2C%22fuelSurcharge%22%3A%22N%22%7D&data_digest=2bF31pAWsKQFTpxVhbG5iQ%3D%3D&partner_code=2460304407_385&from_code=logisticsmarket-center&msg_type=HY_CREATE_ORDER_NOTIFY&msg_id=LP00094865332192 
+
+[Header]
+2018-04-13 16:26:22,828 INFO  Default [19]  
+2018/4/13 16:26:22【用户登录】
+收到的Key:2bF31pAWsKQFTpxVhbG5iQ==
+产生的Key:2bF31pAWsKQFTpxVhbG5iQ==
+收到的Key校验合法,验证通过
+[Header]
+2018-04-13 16:26:22,869 INFO  Default [19]  
+提交订单原始数据：{"subOrderID":null,"deliveryType":"0","payType":"4","transportType":null,"cargoName":"E27小直口螺口吊灯头401 等多件","Sname":"王永群","Smobile":"13802323624","Sprovince":"广东省","Scity":"揭阳市","Saddress":"棉湖镇富领工业区","Rname":"范进文","Rmobile":"15072571132","Rphone":null,"Rprovince":"湖北省","Rcity":"孝感市","Raddress":"体育西路337号（一阳五金店）","logisticID":"LP00094865332192","mailNo":"300041157989","smsNotify":"N","fuelSurcharge":"N","logisticCompanyID":"2460304407_385","serviceType":null,"gmtCommit":"2018-03-07T00:01:30","gmtCancel":"2018-04-13T16:26:22.829+08:00","gmtUpdated":"2018-04-13T16:26:22.829+08:00","businessNetworkNo":"","toNetworkNo":"","materialCost":"N","vistReceive":"N","waitNotifySend":"N","packageService":"","remark":"","ScompanyName":"广东揭阳奥发电器厂","SpostCode":"000000","Sphone":"","Scounty":"揭西县","RcompanyName":"b2b-60901590","RpostCode":"432100","Rcounty":"孝南区","comments":"","promotion":"","aliUID":"964898912","memberType":"PT","bizType":"ZX","codType":"","backSignBill":"0","transportPrice":0.0,"materialCostPrice":0.0,"vistReceivePrice":0.0,"deliveryPrice":0.0,"insuranceValue":0.0,"insurancePrice":0.0,"backSignBillPrice":0.0,"waitNotifySendPrice":0.0,"packageServicePrice":0.0,"totalPrice":0.0,"codPrice":0.0,"otherPrice":0.0,"attention":null,"weightRate":0.0,"volumeRate":0.0,"smsNotifyPrice":0.0,"fuelSurchargePrice":0.0,"totalVolume":0.00,"totalWeight":0.00,"codValue":0.0,"leastExpenses":0.0,"totalNumber":1} 
+
+[Header]
+2018-04-13 16:26:23,109 INFO  Default [4]  
+{"logisticID":"LP00094865332192","result":true,"resultCode":"1000","resultInfo":"提交订单成功","reason":"成功"}
+运单号：300041157989写入数据库成功！ 
+
+[Header]
+2018-04-13 16:27:11,209 INFO  Default [6]  
+取消订单CancelOrder原始请求报文：logistics_interface=%7B%22serviceType%22%3A%22001%22%2C%22gmtCancel%22%3A%221300974726000%22%2C%22extendParam%22%3A%22%E6%89%A9%E5%B1%95%E5%AD%97%E6%AE%B5%22%2C%22extendFields%22%3A%22test%2Cddte%3B%22%2C%22remark%22%3A%22%E8%AE%A2%E5%8D%95%E4%BF%A1%E6%81%AF%E5%A1%AB%E5%86%99%E9%94%99%E8%AF%AF%22%2C%22logisticCompanyID%22%3A%222460304407_385%22%2C%22logisticID%22%3A%22LP00094865332192%22%7D&data_digest=fsXOYFQrMuyy4JRGo6DsyA%3D%3D&partner_code=2460304407_385&from_code=logisticsmarket-center&msg_type=HY_CANCEL_ORDER_NOTIFY&msg_id=LP00094865332192 
+
+[Header]
+2018-04-13 16:27:11,214 INFO  Default [6]  
+2018/4/13 16:27:11【用户登录】
+收到的Key:fsXOYFQrMuyy4JRGo6DsyA==
+产生的Key:fsXOYFQrMuyy4JRGo6DsyA==
+收到的Key校验合法,验证通过
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Header]
+2018-04-13 16:27:13,359 INFO  Default [6]  
+LP00094865332192此单号已撤销,请勿重复操作,取消订单操作原始报文：{"serviceType":"001","gmtCancel":"1300974726000","extendParam":"扩展字段","extendFields":"test,ddte;","remark":"订单信息填写错误","logisticCompanyID":"2460304407_385","logisticID":"LP00094865332192"} 
+
+[Header]
+2018-04-13 16:27:16,533 INFO  Default [24]  
+查询订单QueryOrder原始请求报文：logistics_interface=%7B%22logisticCompanyID%22%3A%22964898912%22%2C%22logisticID%22%3A%22LP00094865332192%22%7D&data_digest=wwE1YcUQp0hgI6JAdBkN9g%3D%3D&partner_code=2460304407_385&from_code=logisticsmarket-center&msg_type=HY_QUERY_ORDER&msg_id=LP00094865332192 
+
+[Header]
+2018-04-13 16:27:16,537 INFO  Default [24]  
+2018/4/13 16:27:16【用户登录】
+收到的Key:wwE1YcUQp0hgI6JAdBkN9g==
+产生的Key:wwE1YcUQp0hgI6JAdBkN9g==
+收到的Key校验合法,验证通过

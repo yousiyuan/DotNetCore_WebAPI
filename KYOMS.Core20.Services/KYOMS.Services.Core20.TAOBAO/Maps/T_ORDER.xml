@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_ORDER"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="GetOrderByOutSysNo">
+      SELECT * FROM T_ORDER WHERE OUTSYS_CODE =:OUTSYS_CODE AND ROWNUM=1
+    </Statement>
+    <Statement Id="Cancel">
+      UPDATE T_ORDER SET
+      ORDER_STATUS= 30
+      ,ORDER_CANCEL_TIME=SYSDATE
+      ,ORDER_CANCEL_REMARK=:ORDER_CANCEL_REMARK
+      ,NEED_ADD_RECORD_BOS = 1
+      ,need_push_srm=1
+      ,need_push_wbms=0
+      ,last_push_srm_time=null
+      WHERE OUTSYS_CODE=:OUTSYS_CODE
+    </Statement>
+    <Statement Id="UpdateMailNo">
+      UPDATE T_ORDER SET
+      NEED_ADD_RECORD_BOS= 0
+      ,NEED_UPDATE_RECORD_BOS=1
+      ,UPDATE_TIME=SYSDATE
+      ,need_push_srm=1
+      ,need_push_wbms=0
+      ,last_push_srm_time=null
+      ,BILL_NO=:BILL_NO
+      ,REMARK2=:REMARK2
+      WHERE OUTSYS_CODE =:OUTSYS_CODE
+    </Statement>
+  </Statements>
+</SmartSqlMap>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="OrderService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\KYOMS.Core20.Common\KYOMS.Core20.Common.csproj" />
+    <ProjectReference Include="..\..\KYOMS.Core20.DE\KYOMS.Core20.DE.csproj" />
+    <ProjectReference Include="..\KYOMS.Core20.Respository\KYOMS.Core20.Respository.csproj" />
+    <ProjectReference Include="..\ZQOMS.Core20.Repository\ZQOMS.Core20.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

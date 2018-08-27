@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_WAYBILL"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="Count">
+      select count(*) from T_WAYBILL where BILL_CODE =:BILL_CODE
+    </Statement>
+  </Statements>
+</SmartSqlMap>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_WAYBILL"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="Count">
+      select count(*) from T_WAYBILL where BILL_CODE =:BILL_CODE
+    </Statement>
+    
+    <Statement Id="T_WAYBILL.Count">
+      select count(*) from T_WAYBILL where BILL_CODE =:BILL_CODE
+    </Statement>
+
+    <Statement Id="T_WAYBILL.GetByOrderNo">
+          SELECT B.*
+            FROM T_WAYBILL B
+      INNER JOIN T_ORDER_WAYBILL_MAP M
+              ON B.BILL_CODE = M.MAIL_NO
+           WHERE M.ORDER_NO = :ORDER_NO
+             AND ROWNUM = '1'
+    </Statement>
+  </Statements>
+</SmartSqlMap>

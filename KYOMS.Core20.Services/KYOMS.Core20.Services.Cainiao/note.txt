@@ -1,0 +1,18 @@
+DockerFile绝对路径
+/opt/app/kyoms.core20.services.cainiao/
+
+创建镜像
+[root@CentOS7 kyoms.core20.services.cainiao]# 
+docker build -t kyoms.core20.services.cainiao:2.0 ./
+
+创建并启动容器，映射一个数据卷
+[root@CentOS7 kyoms.core20.services.cainiao]# 
+docker run -it -p 10000:10000 \
+--name box_kyoms.core20.services.cainiao \
+--restart=always \
+-v /opt/app/log:/app/kyoms.core20.services.cainiao/log \
+kyoms.core20.services.cainiao:2.0
+
+
+
+https://hub.docker.com/r/ericmend/aspnetcore-oracleclient/

@@ -1,0 +1,77 @@
+﻿[Header]
+2018-04-16 08:40:26,510 INFO  Default [1]  
+使用节点172.16.37.30连接zookeeper成功
+
+[Header]
+2018-04-16 08:40:26,540 INFO  Default [1]  
+检测到配置文件更新，服务器版本：6.31,本地版本：1
+
+[Header]
+2018-04-16 08:40:26,545 INFO  Default [1]  
+当前Zookeeper路径:/NetCore.OMS/config/DEV1.0/MySql/MySqlConnectionString
+[Header]
+2018-04-16 08:40:26,549 INFO  Default [1]  
+Zookpeer返回结果:Server=172.16.36.62;Port=3306;Database=KYOMS;Uid=DEV;Pwd=DEV;convert zero datetime=True;Allow User Variables=True
+[Header]
+2018-04-16 08:40:26,553 INFO  Default [1]  
+Zookeeper查询完毕，查询用时：7毫秒
+[Header]
+2018-04-16 08:40:26,555 INFO  Default [1]  
+当前Zookeeper路径:/NetCore.OMS/config/DEV1.0/Oracle/OracleConnectionString
+[Header]
+2018-04-16 08:40:26,558 INFO  Default [1]  
+Zookpeer返回结果:Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.36.13)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=R_OMS_C)));Persist Security Info=True;User ID=DEV;Password=DEV;
+[Header]
+2018-04-16 08:40:26,560 INFO  Default [1]  
+Zookeeper查询完毕，查询用时：4毫秒
+[Header]
+2018-04-16 08:40:26,708 INFO  Default [1]  
+配置文件替换完毕，本次运行耗时：165毫秒
+
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Footer]
+[Header]
+2018-04-16 08:40:56,253 INFO  Default [9]  
+取消订单CancelOrder原始请求报文：logistics_interface=%7B%22serviceType%22%3A%22001%22%2C%22gmtCancel%22%3A%221300974726000%22%2C%22extendParam%22%3A%22%E6%89%A9%E5%B1%95%E5%AD%97%E6%AE%B5%22%2C%22extendFields%22%3A%22test%2Cddte%3B%22%2C%22remark%22%3A%22%E8%AE%A2%E5%8D%95%E4%BF%A1%E6%81%AF%E5%A1%AB%E5%86%99%E9%94%99%E8%AF%AF%22%2C%22logisticCompanyID%22%3A%222460304407_385%22%2C%22logisticID%22%3A%22LP00094865332192%22%7D&data_digest=fsXOYFQrMuyy4JRGo6DsyA%3D%3D&partner_code=2460304407_385&from_code=logisticsmarket-center&msg_type=HY_CANCEL_ORDER_NOTIFY&msg_id=LP00094865332192 
+
+[Header]
+2018-04-16 08:40:56,314 INFO  Default [9]  
+2018/4/16 8:40:56【用户登录】
+收到的Key:fsXOYFQrMuyy4JRGo6DsyA==
+产生的Key:fsXOYFQrMuyy4JRGo6DsyA==
+收到的Key校验合法,验证通过
+[Header]
+2018-04-16 08:41:02,380 INFO  Default [9]  
+LP00094865332192此单号已撤销,请勿重复操作,取消订单操作原始报文：{"serviceType":"001","gmtCancel":"1300974726000","extendParam":"扩展字段","extendFields":"test,ddte;","remark":"订单信息填写错误","logisticCompanyID":"2460304407_385","logisticID":"LP00094865332192"} 
+
+[Header]
+2018-04-16 08:41:04,953 INFO  Default [9]  
+编辑订单EditOrder原始请求报文：logistics_interface=%7B%22totalVolume%22%3A%2210%22%2C%22serviceType%22%3A%22001%22%2C%22totalNumber%22%3A%2220%22%2C%22packageServicePrice%22%3A%225.00%22%2C%22totalPrice%22%3A%22100%22%2C%22smsNotifyPrice%22%3A%225.00%22%2C%22materialCost%22%3A%22Y%22%2C%22remark%22%3A%22%E6%97%A0%22%2C%22toNetworkNo%22%3A%22S2%22%2C%22codType%22%3A%221%22%2C%22businessNetworkNo%22%3A%22S1%22%2C%22payType%22%3A%222%22%2C%22backSignBillPrice%22%3A%222.00%22%2C%22otherPrice%22%3A%221.00%22%2C%22codPrice%22%3A%222.00%22%2C%22extendFields%22%3A%22test%2Cddte%3B%22%2C%22weightRate%22%3A%2212%22%2C%22transportType%22%3A%22SDFG%22%2C%22waitNotifySend%22%3A%22N%22%2C%22backSignBill%22%3A%22Y%22%2C%22fuelSurchargePrice%22%3A%222.00%22%2C%22receiver%22%3A%7B%22address%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E4%BD%99%E6%9D%AD%E5%8C%BA%E6%96%87%E4%B8%80%E8%A5%BF%E8%B7%AF969%E5%8F%B7%E6%B7%98%E5%AE%9D%E5%9F%8E%22%2C%22province%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%22%2C%22phone%22%3A%220571-85022088-30000%22%2C%22city%22%3A%22%E6%9D%AD%E5%B7%9E%E5%B8%82%22%2C%22companyName%22%3A%22%E8%8F%9C%E9%B8%9F%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%22%2C%22name%22%3A%22%E5%BC%A0%E4%B8%89%22%2C%22mobile%22%3A%2218668015381%22%2C%22county%22%3A%22%E4%BD%99%E6%9D%AD%E5%8C%BA%22%2C%22postCode%22%3A%22510200%22%7D%2C%22vistReceive%22%3A%22SSDD%22%2C%22leastExpenses%22%3A%2210.00%22%2C%22deliveryType%22%3A%221%22%2C%22packageService%22%3A%225.00%22%2C%22waitNotifySendPrice%22%3A%221.00%22%2C%22logisticCompanyID%22%3A%22964898912%22%2C%22deliveryPrice%22%3A%225.00%22%2C%22volumeRate%22%3A%2211%22%2C%22vistReceivePrice%22%3A%222.00%22%2C%22codValue%22%3A%22100.00%22%2C%22materialCostPrice%22%3A%222.00%22%2C%22insuranceValue%22%3A%225.00%22%2C%22transportPrice%22%3A%221.00%22%2C%22cargoName%22%3A%22%E6%B0%B4%E6%9E%9C%22%2C%22extendParam%22%3A%2212358622%22%2C%22sender%22%3A%7B%22address%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E8%92%8B%E6%9D%91%22%2C%22province%22%3A%22%E6%B5%99%E6%B1%9F%E7%9C%81%22%2C%22phone%22%3A%220571-85022088-30000%22%2C%22city%22%3A%22%E6%9D%AD%E5%B7%9E%E5%B8%82%22%2C%22companyName%22%3A%22%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%EF%BC%88%E4%B8%AD%E5%9B%BD%EF%BC%89%E8%BD%AF%E4%BB%B6%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%22%2C%22name%22%3A%22%E5%BC%A0%E4%B8%89%22%2C%22mobile%22%3A%2213105713432%22%2C%22county%22%3A%22%E8%A5%BF%E6%B9%96%E5%8C%BA%22%2C%22postCode%22%3A%22510020%22%7D%2C%22insurancePrice%22%3A%226.00%22%2C%22smsNotify%22%3A%22Y%22%2C%22totalWeight%22%3A%223%22%2C%22gmtUpdated%22%3A%221300974726000%22%2C%22logisticID%22%3A%22LP00094865332192%22%2C%22mailNo%22%3A%22300041157989%22%2C%22memberType%22%3A%22POW%22%2C%22fuelSurcharge%22%3A%22N%22%2C%22promotion%22%3A%22%E5%A4%A7%E4%BF%83%22%7D&data_digest=WboqiWxcucQSlVRVH9qI2w%3D%3D&partner_code=2460304407_385&from_code=logisticsmarket-center&msg_type=HY_UPDATE_ORDER_NOTIFY&msg_id=LP00094865332192 
+
+[Header]
+2018-04-16 08:41:04,956 INFO  Default [9]  
+2018/4/16 8:41:04【用户登录】
+收到的Key:WboqiWxcucQSlVRVH9qI2w==
+产生的Key:WboqiWxcucQSlVRVH9qI2w==
+收到的Key校验合法,验证通过
+[Header]
+2018-04-16 08:41:06,494 INFO  Default [9]  
+{"logisticID":"LP00094865332192","result":false,"resultCode":"1001","resultInfo":"修改订单失败","reason":"此单已确认,无法进行此操作."} 
+
+[Header]
+2018-04-16 08:41:14,650 INFO  Default [23]  
+查询订单QueryOrder原始请求报文：logistics_interface=%7B%22logisticCompanyID%22%3A%22964898912%22%2C%22logisticID%22%3A%22LP00094865332192%22%7D&data_digest=wwE1YcUQp0hgI6JAdBkN9g%3D%3D&partner_code=2460304407_385&from_code=logisticsmarket-center&msg_type=HY_QUERY_ORDER&msg_id=LP00094865332192 
+
+[Header]
+2018-04-16 08:41:14,656 INFO  Default [23]  
+2018/4/16 8:41:14【用户登录】
+收到的Key:wwE1YcUQp0hgI6JAdBkN9g==
+产生的Key:wwE1YcUQp0hgI6JAdBkN9g==
+收到的Key校验合法,验证通过

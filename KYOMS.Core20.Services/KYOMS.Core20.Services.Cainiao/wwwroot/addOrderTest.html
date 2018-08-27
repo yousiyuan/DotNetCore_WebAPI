@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>菜鸟仓配在线下单测试</title>
+    <script src="jquery-1.10.2.js"></script>
+    <script language="javascript" type="text/javascript">
+        var self = this;
+        self.root = location.protocol + "//" + location.host + "/";
+
+        self.ajaxRequest = function (_httpUrl, _params, _callback) {
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                contentType: "text/plain",
+                url: _httpUrl,
+                data: _params,
+                dataType: "json",
+                beforeSend: function (xhr) {
+                    //在发送请求之前，执行这里的代码
+                },
+                success: _callback,//function (result, status, xhr) { },
+                complete: function (xhr, status) {
+                    //请求完成时运行的函数
+                    //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                },
+                error: function (xhr, status, error) {
+                    //如果请求失败要运行的函数。
+                    if (typeof (xhr.responseText) != "undefined")
+                        alert(xhr.status + ":" + xhr.statusText);
+                    else
+                        alert(error.message);
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr><td>请求方式1：</td><td><input type="button" id="btnAddOrder1" value="提交测试订单" /></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>请求方式2：</td><td><input type="button" id="btnAddOrder2" value="提交测试订单" /></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>请求方式3：</td><td><input type="button" id="btnAddOrder3" value="提交测试订单" /></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>结果</td><td><input type="text" name="result" value="" /></td></tr>
+        <tr><td>订单号</td><td><input type="text" name="ordercode" value="" /></td></tr>
+        <tr><td>错误信息</td><td><input type="text" name="errmsg" value="" /></td></tr>
+    </table>
+</div>
+<script language="javascript" type="text/javascript">
+        self.orderdata = {
+            "chargingInfo": {
+                "basicWeight": {
+                    "fee": "5",
+                    "weight": "3"
+                },
+                "stepWeight": {
+                    "fee": "2",
+                    "weight": "1"
+                },
+                "totalFee": "23"
+            },
+            "courierInfo": {
+                "company": "天天快递",
+                "courierNo": "199900",
+                "courierPhone": "1381111111",
+                "extendFields": [
+                    {
+                        "key": "PACKAGE_NO",
+                        "value": "DWD0018"
+                    }
+                ],
+                "name": "张三",
+                "station": "余杭网点",
+                "stationPhone": "1381111111"
+            },
+            "cpCode": "SF",
+            "dicCode": "DCP00098765",
+            "expressPrintCode": "AeduSjkd",
+            "logisticsId": "LBXDCP1023892594",
+            "mailNo": "6201710180538",
+            "opRequire": {
+                "opDesc": "天猫全渠道的作业类型",
+                "opType": "TMQQD"
+            },
+            "orderBizType": "1",
+            "orderCreateTime": "2014-07-28 10:05:34",
+            "orderExtendFields": [
+                {
+                    "key": "A001",
+                    "value": "5000"
+                }
+            ],
+            "orderSource": "TB",
+            "packageInfo": {
+                "itemList": [
+                    {
+                        "extendFields": "is_precious:1;itemId:45571155013;serviceFlag:2;",
+                        "insuredAmount": "199900",
+                        "itemName": "毛衣",
+                        "itemNum": "1"
+                    }
+                ],
+                "packageHeight": "50",
+                "packageLength": "50",
+                "packageVolume": "500000",
+                "packageWeight": "200000",
+                "packageWidth": "50"
+            },
+            "placeOrderType": "1",
+            "receiver": {
+                "address": "四川省成都市高新区新航路283号",
+                "city": "成都",
+                "county": "高新",
+                "mobile": "15956874256",
+                "name": "李某",
+                "phone": "024-84332654",
+                "province": "四川",
+                "receiverDivisionId": "67991",
+                "receiverTown": "文一路",
+                "userId": "123456",
+                "zipCode": "634569"
+            },
+            "remark": "",
+            "routeInfo": {
+                "after": {
+                    "address": "杭州市文一西路999号",
+                    "city": "杭州",
+                    "contactNumber": "13812345678",
+                    "contacts": "张三",
+                    "county": "高兴区",
+                    "cpCode": "CP001",
+                    "prov": "浙江",
+                    "town": "文一西路"
+                },
+                "before": {
+                    "address": "669号",
+                    "city": "杭州",
+                    "contactNumber": "138111111989",
+                    "contacts": "张三",
+                    "county": "高兴区",
+                    "cpCode": "T002",
+                    "prov": "浙江",
+                    "town": "文一西路"
+                },
+                "carrierCode": "T123568",
+                "extendFields": [
+                    {
+                        "key": "SF_PRODUCT_CODE",
+                        "value": "1"
+                    }
+                ],
+                "shortAddress": "浙－杭",
+                "siteCode": "HX1",
+                "siteName": "杭萧1站"
+            },
+            "sender": {
+                "Town": "街道",
+                "address": "浙江省杭州市余杭区文一西路823号",
+                "city": "杭州",
+                "county": "余杭",
+                "customerId": "12792",
+                "customerNo": "JD007689",
+                "mobile": "13989203824",
+                "name": "刘某",
+                "phone": "0571-84292224",
+                "province": "浙江",
+                "senderAddressId": "7638290",
+                "senderDivisionId": "67991",
+                "senderTown": "街道",
+                "userId": "123456",
+                "zipCode": "638293"
+            },
+            "serviceDetail": {
+                "codBuyServiceFee": "300",
+                "codSplitFee": "100",
+                "codTotalServiceFee": "500",
+                "customerOrderTime": "2014-07-30 14:00:00",
+                "endSignTime": "2015-09-11 17:00:00",
+                "expressScheduleType": "101",
+                "extendFields": [
+                    {
+                        "key": "A001",
+                        "value": "5000"
+                    }
+                ],
+                "goodsValue": "10000",
+                "gotEndTime": "204-11-30 19:00",
+                "gotInTime": "30",
+                "gotStartTime": "204-11-30 18:00",
+                "grabOrderTime": "2014-07-30 14:00:00",
+                "prevMailNo": "",
+                "promiseSignTime": "2015-09-11 16:30:00",
+                "scheduleDesc": "送达时间在2014-07-30 10:00:00到2014-07-30 14:00:00之间",
+                "scheduleType": "104",
+                "sendEndTime": "2014-07-30 13:05:34",
+                "sendStartTime": "2014-07-30 12:05:34",
+                "temperatureRequirement": "0-18",
+                "totalFee": "600",
+                "totalInsuredAmount": "23930"
+            },
+            "serviceFlag": "34,37",
+            "tradeNo": "22227880099"
+        };
+
+
+        $(document).ready(function () {
+            $("#btnAddOrder1").click(function () {
+                self.url = self.root + "api/orders/addorder";
+
+                self.encodeHtml = JSON.stringify(self.orderdata);
+                self.data_digest = 'CgtasrQSpiCO6Vjk6cHJug==';
+
+                self.message = {
+                    "logistics_interface": self.encodeHtml,
+                    "data_digest": self.data_digest,
+                    "msg_type": "TMS_CREATE_ORDER_ONLINE_NOTIFY",
+                    "msg_id": "DCP00000000000002354032",
+                    "ecCompanyId": "TAOBAO"
+                };
+
+                self.ajaxRequest(self.url, self.message, function (result, status, xhr) {
+                    alert(status);
+                    alert(xhr);
+                    alert(JSON.stringify(result));
+                });
+                $(this).attr({ "disabled": "disabled" });
+            });
+
+            $("#btnAddOrder2").click(function () {
+                self.url = self.root + "api/orders/addorder";
+
+                self.encodeHtml = encodeURI(JSON.stringify(self.orderdata));
+                self.data_digest = encodeURIComponent('CgtasrQSpiCO6Vjk6cHJug==');
+
+                self.message = "logistics_interface=" + self.encodeHtml + "&data_digest=" + self.data_digest + "&msg_type=TMS_CREATE_ORDER_ONLINE_NOTIFY&msg_id=DCP00000000000002354032&ecCompanyId=TAOBAO";
+                self.ajaxRequest(self.url, self.message, function (result, status, xhr) {
+                    alert(status);
+                    alert(xhr);
+                    alert(JSON.stringify(result));
+                });
+                $(this).attr({ "disabled": "disabled" });
+            });
+
+            $("#btnAddOrder3").click(function () {
+                self.url = self.root + "api/orders/getserviceinfo";
+
+                $.ajax({
+                    cache: false,
+                    async: false,
+                    type: "GET",
+                    contentType: "text/plain",
+                    url: self.url,
+                    data: { id: "1", name: "mijinchenyuan", sex:"sir"},
+                    dataType: "text",
+                    beforeSend: function (xhr) {
+                        //在发送请求之前，执行这里的代码
+                    },
+                    success: function(result, status, xhr) {
+                        alert(result);
+                    },
+                    complete: function (xhr, status) {
+                        //请求完成时运行的函数
+                        //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                    },
+                    error: function (xhr, status, error) {
+                        //如果请求失败要运行的函数。
+                        if (typeof (xhr.responseText) != "undefined")
+                            alert(xhr.status + ":" + xhr.statusText);
+                        else
+                            alert(error.message);
+                    }
+                });
+
+                $(this).attr({ "disabled": "disabled" });
+            });
+        });
+
+        //TODO 批量添加的时候，调用下面的代码
+        //self.handlerId = window.setInterval(EachFor, 200);
+        self.handlerId;
+        self.num = 0;
+        function EachFor() {
+            self.num += 1;
+            $("input[type=text][name=result]").val(self.num);
+            AddOrderTest();
+            if (self.num >= 1000000) {
+                window.clearInterval(self.handlerId);
+                alert("数据添加完毕");
+            }
+        }
+        function AddOrderTest() {
+            self.message = "logistics_interface=" + self.encodeHtml + "&data_digest=" + self.data_digest + "&msg_type=TMS_CREATE_ORDER_ONLINE_NOTIFY&msg_id=DCP00000000000002354032&ecCompanyId=TAOBAO";
+
+            self.ajaxRequest(self.url, self.message, function (result, status, xhr) {
+                //alert(status);
+                //alert(xhr);
+                //alert(JSON.stringify(result));
+            });
+        }
+</script>
+</body>
+</html>

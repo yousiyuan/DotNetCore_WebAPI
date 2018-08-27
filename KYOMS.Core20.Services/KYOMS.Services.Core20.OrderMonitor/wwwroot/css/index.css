@@ -1,0 +1,57 @@
+﻿.modal-body .control-group {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin: 10px;
+}
+
+.topPanel .search .input-group .form-control {
+    width: 80px;
+}
+
+.input-group div {
+    display: inline-block;
+}
+
+input, select, button {
+    border-radius: 5px !important;
+    margin: 5px;
+    
+}
+.form-control {
+    font-size: 12px;
+}
+.input-group>div>span {
+    display: inline-flex;
+    float: left;
+    line-height: 40px;
+}
+
+.topPanel .search .input-group {
+    line-height: 0px;
+}
+.glyphicon-remove:before {
+    cursor: pointer;
+}
+.topPanel {
+    border: 1px #c4d4d3 solid;
+    border-radius: 5px;
+    margin: 16px;
+    background-color: #d9edf7;
+    font-size: 12px;
+}
+#userTable th {
+    background-color: #337ab7;
+    color: white;
+}
+.table-hover > tbody > tr:hover {
+    background-color: #dff0d8;
+}
+table#userTable td {
+    font-size: 12px;
+}
+.btn {
+    font-size: 12px;
+}

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <style type="text/css">
+        #TextArea1 {
+            height: 257px;
+            width: 770px;
+        }
+
+        #taPostData {
+            height: 377px;
+            width: 929px;
+        }
+
+        #reason {
+            width: 540px;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="taPostData" name="S1"></textarea><br />
+    <br />
+    <button id="AddOrder" style="margin-left: 50px">测试提交订单</button>
+    <button id="Reload" style="margin-left: 100px">刷新</button>
+    <br />
+    <p>
+        <span>结果：</span>
+        <input type="text" id="success" value="" />
+    </p>
+    <p>
+        <span>订单号：</span>
+        <input type="text" id="txLogisticID" value="" />
+    </p>
+    <p>
+        <span>错误信息：</span>
+        <input type="text" id="reason" value="" />
+    </p>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var self = this;
+        self.addBtn = $("#AddOrder");
+        self.reloadBtn = $("#Reload");
+        self.url = "/OrdersController/AddOrder";//EBillHandle//TestHandler
+
+        self.postwebJson = function (url, param, fn) {
+            $.ajax({
+                url: url,
+                type: "post",
+                data: param,
+                dataType: "json",
+                //async: false,
+                success: fn
+            });
+        };
+
+        //self.logistics_interface = "1+2 9";
+        //self.data_digest = "/2QXPfe0fA8544OepJOQPw==";
+        //self.message = "logistics_interface=" + self.logistics_interface
+        //    + "&data_digest=" + self.data_digest + "&msg_type=ORDERCREATE&ecCompanyId=KDNIAOEBILL";
+        self.message = 'logistics_interface={"cpCode":"2460304407_385","branchCode":"Z00100","waybillInfoList":[{"weight":"0","segmentCode":"NORMAL","daTouBi":"浙-温州-平阳","orderChannel":"TB","sendAddress":{"cityName":"西安市","areaName":"灞桥区","detailAddress":"纺园二路55号","provinceName":"陕西省"},"consigneeName":"张浩","senderPhone":"029-83335822","volume":"0","bizIdList":["112571702984964810"],"senderName":"舒米家居","sellerId":"89432017","createTime":"2017-12-21 12:15:50","waybillCode":"6000000468196","consigneeMobile":"15988179238","itemList":[{"name":"创意懒人沙发可折叠拆洗榻榻米单人双人沙发椅卧室舒服布艺沙发床","count":"1"}],"isAliOrder":"Y","productType":"STANDARD_EXPRESS","msgVersion":"0","consigneeAddress":{"cityName":"宁波市","areaName":"镇海区","detailAddress":"招宝山街道城河西路207号(天地百货)","provinceName":"浙江省"},"status":"2"}]}&data_digest=7rCJEOXZPQfN8Pw3F8h62g==&partner_code=2460304407_385&from_code=WAYBILL&msg_type=TMS_WAYBILL_DETAIL_SEND_BATCH&msg_id=0bba705a15138297507527055e';
+        //添加事件
+        self.addBtn.click(
+            function () {
+                var param = $('#taPostData').val();
+                self.postwebJson(self.url,
+                    param,
+                    function (data) {
+                        $("#success").val(data.errorMsg);
+                        $("#reason").val(data.errorMsg);
+                        console.log(data.errorMsg);
+                    });
+            });
+
+        //重新加载事件
+        self.reloadBtn.click(function () {
+            window.location.href = window.location.href;
+            $("#success").val("");
+            $("#txLogisticID").val("");
+            $("#reason").val("");
+            self.addBtn.attr('disabled', false);
+        });
+    });
+</script>

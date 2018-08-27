@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartSqlMap Scope="T_ORDER_WAYBILL_MAP"  xmlns="http://SmartSql.net/schemas/SmartSqlMap.xsd">
+  <Statements>
+    <Statement Id="QueryParams">
+      <Where>
+
+      </Where>
+    </Statement>
+    <!--获取数据列-->
+    <Statement Id="Update">
+      UPDATE T_ORDER_WAYBILL_MAP
+      SET
+      "MAIL_NO" =:MAIL_NO
+      WHERE   "ORDER_NO" =:ORDER_NO
+    </Statement>
+  </Statements>
+</SmartSqlMap>

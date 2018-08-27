@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>阿里订单接口测试-WebAPI</title>
+    <script src="jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div>
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tr><td>请求方式1：</td><td><input type="button" id="btnAddOrder1" onclick="addOrder1(this)" value="提交测试订单" /></td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>请求方式2：</td><td><input type="button" id="btnAddOrder2" onclick="addOrder2(this)" value="提交测试订单" /></td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>请求方式4：</td><td><input type="button" id="btnAddOrder4" onclick="addOrder4(this)" value="提交测试订单" /></td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>结果</td><td><input type="text" name="result" value="" /></td></tr>
+            <tr><td>订单号</td><td><input type="text" name="ordercode" value="" /></td></tr>
+            <tr><td>错误信息</td><td><input type="text" name="errmsg" value="" /></td></tr>
+        </table>
+    </div>
+    <script language="javascript" type="text/javascript">
+        var self = this;
+        self.root = location.protocol + "//" + location.host + "/";
+
+        self.orderdata = {
+            "totalVolume": "0.00",
+            "totalNumber": "1",
+            "backSignBill": "0",
+            "bizType": "ZX",
+            "receiver": {
+                "address": "体育西路337号（一阳五金店）",
+                "province": "湖北省",
+                "phone": "",
+                "city": "孝感市",
+                "companyName": "b2b-60901590",
+                "name": "范进文",
+                "mobile": "15072571132",
+                "county": "孝南区",
+                "postCode": "432100"
+            },
+            "vistReceive": "N",
+            "deliveryType": "0",
+            "materialCost": "N",
+            "logisticCompanyID": "2460304407_385",
+            "mailNo": "300041157989",
+            "payType": "4",
+            "cargoName": "E27小直口螺口吊灯头401 等多件",
+            "sender": {
+                "address": "棉湖镇富领工业区",
+                "province": "广东省",
+                "phone": "",
+                "city": "揭阳市",
+                "companyName": "广东揭阳奥发电器厂",
+                "name": "王永群",
+                "mobile": "13802323624",
+                "county": "揭西县",
+                "postCode": "000000"
+            },
+            "smsNotify": "N",
+            "totalWeight": "0.00",
+            "gmtCommit": "1520352090000",
+            "logisticID": "LP00094865332192",
+            "aliUID": "964898912",
+            "memberType": "PT",
+            "waitNotifySend": "N",
+            "fuelSurcharge": "N"
+        };
+
+        function addOrder4(btn) {
+            self.url = self.root + "api/testorders/addorder4";
+
+            self.encodeHtml = JSON.stringify(self.orderdata);//不需要 进行  UrlEncode编码
+            self.data_digest = 'KZ3pbQAy7qsZO+w/yUeqGQ==';   //不需要 进行  UrlEncode编码
+
+            //JS对象形式传参
+            self.message = {
+                "logistics_interface": self.encodeHtml,
+                "data_digest": self.data_digest,
+                "partner_code": self.orderdata.logisticCompanyID,
+                "from_code": "",
+                "msg_type": "",
+                "msg_id": self.orderdata.logisticID
+            };
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                contentType: "text/plain",
+                url: self.url,
+                data: self.message,
+                dataType: "text",
+                beforeSend: function (xhr) {
+                    //在发送请求之前，执行这里的代码
+                },
+                success: function (result, status, xhr) {
+                    alert(result);
+                },
+                complete: function (xhr, status) {
+                    //请求完成时运行的函数
+                    //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                },
+                error: function (xhr, status, error) {
+                    //如果请求失败要运行的函数。
+                    if (typeof (xhr.responseText) != "undefined")
+                        alert(xhr.status + ":" + xhr.statusText);
+                    else
+                        alert(error.message);
+                }
+            });
+
+            $(btn).attr({ "disabled": "disabled" });
+        }
+
+        function addOrder1(btn) {
+            self.url = self.root + "api/testorders/rawstring";
+
+            self.encodeHtml = JSON.stringify(self.orderdata);//不需要 进行  UrlEncode编码
+            self.data_digest = 'KZ3pbQAy7qsZO+w/yUeqGQ==';   //不需要 进行  UrlEncode编码
+
+            //JS对象形式传参
+            self.message = {
+                "logistics_interface": self.encodeHtml,
+                "data_digest": self.data_digest,
+                "partner_code": self.orderdata.logisticCompanyID,
+                "from_code": "",
+                "msg_type": "",
+                "msg_id": self.orderdata.logisticID
+            };
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                contentType: "text/plain",
+                url: self.url,
+                data: self.message,
+                dataType: "json",
+                beforeSend: function (xhr) {
+                    //在发送请求之前，执行这里的代码
+                },
+                success: function(result, status, xhr) {
+                    alert(result);
+                },
+                complete: function (xhr, status) {
+                    //请求完成时运行的函数
+                    //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                },
+                error: function (xhr, status, error) {
+                    //如果请求失败要运行的函数。
+                    if (typeof (xhr.responseText) != "undefined")
+                        alert(xhr.status + ":" + xhr.statusText);
+                    else
+                        alert(error.message);
+                }
+            });
+
+            $(btn).attr({ "disabled": "disabled" });
+        }
+
+        function addOrder2(btn) {
+            self.url = self.root + "api/testorders/rawbytes";
+
+            self.encodeHtml = JSON.stringify(self.orderdata);//不需要 进行  UrlEncode编码
+            self.data_digest = 'KZ3pbQAy7qsZO+w/yUeqGQ==';   //不需要 进行  UrlEncode编码
+
+            //JS对象形式传参
+            self.message = {
+                "logistics_interface": self.encodeHtml,
+                "data_digest": self.data_digest,
+                "partner_code": self.orderdata.logisticCompanyID,
+                "from_code": "",
+                "msg_type": "",
+                "msg_id": self.orderdata.logisticID
+            };
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                contentType: "application/octet-stream",
+                url: self.url,
+                data: self.message,
+                dataType: "json",
+                beforeSend: function (xhr) {
+                    //在发送请求之前，执行这里的代码
+                },
+                success: function (result, status, xhr) {
+                    alert(result);
+                },
+                complete: function (xhr, status) {
+                    //请求完成时运行的函数
+                    //在请求成功或失败之后均调用，即在 success 和 error 函数之后
+                },
+                error: function (xhr, status, error) {
+                    //如果请求失败要运行的函数。
+                    if (typeof (xhr.responseText) != "undefined")
+                        alert(xhr.status + ":" + xhr.statusText);
+                    else
+                        alert(error.message);
+                }
+            });
+
+            $(btn).attr({ "disabled": "disabled" });
+        }
+
+    </script>
+</body>
+</html>
+<!--不同请求类型 对比-->

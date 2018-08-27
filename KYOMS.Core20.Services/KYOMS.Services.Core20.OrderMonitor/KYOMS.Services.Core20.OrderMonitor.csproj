@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>2de72461-a050-4693-9d6d-b582beb82e45</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib\bootstrap-table\dist\新文件夹\**" />
+    <Content Remove="wwwroot\lib\bootstrap-table\dist\新文件夹\**" />
+    <EmbeddedResource Remove="wwwroot\lib\bootstrap-table\dist\新文件夹\**" />
+    <None Remove="wwwroot\lib\bootstrap-table\dist\新文件夹\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\KYOMS.Core20.ApplicationCore\KYOMS.Core20.Application\KYOMS.Core20.Application.csproj" />
+    <ProjectReference Include="..\..\KYOMS.Core20.ApplicationCore\KYOMS.Core20.Respository\KYOMS.Core20.Respository.csproj" />
+    <ProjectReference Include="..\..\KYOMS.Core20.Common\KYOMS.Core20.Common.csproj" />
+    <ProjectReference Include="..\..\KYOMS.Core20.DE\KYOMS.Core20.DE.csproj" />
+    <ProjectReference Include="..\..\KYOMS.Core20.Entity\KYOMS.Core20.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="dotNetCore.Data.OracleClient">
+      <HintPath>..\..\Dll\dotNetCore.Data.OracleClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="config\MySqlSmartSqlMap.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="config\SmartSqlMap.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Maps\MySql\T_MySql_ORDER_MONITOR.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
